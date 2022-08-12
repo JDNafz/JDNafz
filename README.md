@@ -1,6 +1,6 @@
 Hello ladies, gentleman, binary and non-binary alike
 
-# My name is JD!
+My name is JD!
 
 I'm a dancer, human, and aspiring software engineer. I've been working this past year 
 on developing my skills. I'm currently focused on problem solving in python. I like to 
