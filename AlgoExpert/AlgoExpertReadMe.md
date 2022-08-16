@@ -13,7 +13,7 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Validate Subsequence](/AlgoExpert/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   |
 
 
-[comment]: <> (    | [](/AlgoExpert/)                                              | 🟢         | Arrays               |   |                   )
+[//]: # (|[](/AlgoExpert/)                                              | 🟢         | Arrays               |   |                   )
 
 #### Difficulty Levels
 
