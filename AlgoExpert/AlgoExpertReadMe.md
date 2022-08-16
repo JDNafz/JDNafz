@@ -4,7 +4,7 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 
 | Question                                                                          | Difficulty | Category             | Approach                 |
 | --------------------------------------------------------------------------------- | ---------- | -------------------- | ------------------------ |
-| [Two Number Sum](/Two Number Sum.py)                                              | 🟢         | Arrays               | Hash Table, Two Pointers |
+| [Two Number Sum](/Two-Number-Sum.py)                                              | 🟢         | Arrays               | Hash Table, Two Pointers |
 
 
 #### Difficulty Levels
