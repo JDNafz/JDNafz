@@ -2,9 +2,9 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 
 ## Questions
 
-| Question                                                                          | Difficulty | Category             | Approach                 | Good to review |
-| --------------------------------------------------------------------------------- | ---------- | -------------------- | ------------------------ | -------------- |
-| [Two Number Sum](/Two-Number-Sum.py)                                              | 🟢         | Arrays               | Hash Table, Two Pointers |                |
+| Question                                                                          | Difficulty | Category             | Approach                 |
+| --------------------------------------------------------------------------------- | ---------- | -------------------- | ------------------------ |
+| [Two Number Sum](main/Two Number Sum.py)                                              | 🟢         | Arrays               | Hash Table, Two Pointers |
 
 
 #### Difficulty Levels
