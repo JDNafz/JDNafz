@@ -1,6 +1,11 @@
 '''
+Branch Sums asks you to sum the values in each Binary Tree branch. 
+Basically from every leaf of the Binary Tree summ all of its parents values.
+
+🟢 Easy Difficulty
+
+
 https://www.algoexpert.io/questions/branch-sums
-🔵 Medium  
 
 '''
 
