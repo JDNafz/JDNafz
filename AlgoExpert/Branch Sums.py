@@ -1,5 +1,6 @@
 '''
 https://www.algoexpert.io/questions/branch-sums
+🔵 Medium  
 
 '''
 
