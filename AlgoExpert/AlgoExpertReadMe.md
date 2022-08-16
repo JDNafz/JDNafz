@@ -11,9 +11,9 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Tournament Winner](/AlgoExpert/Tournament%20Winner.py)                           | 🟢         | Arrays               |   |
 | [Sorted Squared Array](/AlgoExpert/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   |
 | [Validate Subsequence](/AlgoExpert/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   |
-[comment]: <> (
-    | [](/AlgoExpert/)                                              | 🟢         | Arrays               |   |                     
-)
+
+
+[comment]: <> (    | [](/AlgoExpert/)                                              | 🟢         | Arrays               |   |                   )
 
 #### Difficulty Levels
 
