@@ -101,7 +101,7 @@ class BST:
                         if currentNode.value < parentNode.value:
                             parentNode.left = currentNode.left
                         else:
-                            parentnode.right = currentNode.left
+                            parentNode.right = currentNode.left
                     currentNode = None
 
                 # has no children:
