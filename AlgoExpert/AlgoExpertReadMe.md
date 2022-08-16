@@ -12,11 +12,3 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Sorted Squared Array](/AlgoExpert/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   |
 | [Validate Subsequence](/AlgoExpert/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   |
 
-
-[//]: # (|[](/AlgoExpert/)                                              | 🟢         | Arrays               |   |                   )
-
-#### Difficulty Levels
-
-🟢 Easy  
-🔵 Medium  
-
