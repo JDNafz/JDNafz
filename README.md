@@ -11,8 +11,7 @@ work through problems on [Open.Kattis](https://open.kattis.com/) and study algor
 
 The "Chess" problem asks you to calculate how a bishop would move 
 from any given position on the chessboard to any other position.
-Check out the full description of the coding 
-challenge at [Open.kattis.com](https://open.kattis.com/problems/chess?editsubmit=9221963)
+
 
 I've dedicated my time to coding everyday and I'm looking for my first job! 
 
