@@ -12,3 +12,4 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Validate Subsequence](/AlgoExpert/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   |
 | [Branch Sums](/AlgoExpert/Branch%20Sums.py)                                       | 🟢         | Binary Trees         |   |
 | [Non-Constructible Change](/AlgoExpert/Non-Constructible%20Change.py)             | 🟢         | Arrays               |   |
+| [Find Closest Value in BST](/AlgoExpert/Find%20Closest%20Value%20in%20BST.py)     | 🟢         | Binary Search Trees  |   |
