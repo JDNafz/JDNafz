@@ -3,7 +3,7 @@
 ### My name is JD!
 
 I'm a dancer, human, and aspiring software engineer. I've been working this past year 
-on developing my skills. I'm currently focused on problem solving in python. I like to 
+on developing my skills. I currently focus on problem solving in python. I like to 
 work through problems on [Open.Kattis](https://open.kattis.com/) and study algorithms on [AlgoExpert](https://www.algoexpert.io/)
 
 ## Check out my Code                👇
@@ -15,7 +15,6 @@ from any given position on the chessboard to any other position.
 
 I've dedicated my time to coding everyday and I'm looking for my first job! 
 
-### Or most recent project on AlgoExpert [Branch Sums](/AlgoExpert/Branch%20Sums.py)
+### Or most recent project on AlgoExpert [Max Subset Sum No Adjacent](/AlgoExpert/Max%20Subset%20Sum%20No%20Adjacent.py) Completed on 8/17/2022
 
-Branch Sums asks you to sum the values in each Binary Tree branch. 
-Basically from every leaf of the Binary Tree summ all of its parents values.
+Find the max sum of an array, without adding neighboring integers.
