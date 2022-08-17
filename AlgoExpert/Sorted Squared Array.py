@@ -1,4 +1,9 @@
-'''https://www.algoexpert.io/questions/sorted-squared-array'''
+'''
+
+https://www.algoexpert.io/questions/sorted-squared-array
+
+🟢 Easy Difficulty
+'''
 
 # O(n log(n)) time | O(n) Space
 def sortedSquaredArray(array):

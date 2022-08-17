@@ -2,7 +2,8 @@
 Construct a Binary Search Tree that has insert, 
 remove, contains, and remove methods
 
-Passed all test cases
+🔵 Medium Difficulty
+
 '''
 
 

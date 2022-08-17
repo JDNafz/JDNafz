@@ -1,4 +1,9 @@
-'''https://www.algoexpert.io/questions/tournament-winner'''
+'''
+🟢 Easy Difficulty
+
+https://www.algoexpert.io/questions/tournament-winner
+
+'''
 
 def tournamentWinner(competitions, results):
     scores = {}

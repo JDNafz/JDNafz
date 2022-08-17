@@ -1,5 +1,8 @@
 '''
 https://www.algoexpert.io/questions/smallest-difference
+
+🔵 Medium Difficulty
+
 '''
 
 

@@ -1,4 +1,5 @@
 '''
+🟢 Easy Difficulty
 https://www.algoexpert.io/questions/two-number-sum
 '''
 def twoNumberSum(array, targetSum):

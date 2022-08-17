@@ -1,4 +1,5 @@
 '''
+🟢 Easy Difficulty
 https://www.algoexpert.io/questions/validate-subsequence
 '''
 def isValidSubsequence(array, sequence):
