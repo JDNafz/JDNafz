@@ -10,21 +10,16 @@ def findClosestValueInBst(tree, target):
     closestTree = tree.value
     closestDif = abs(tree.value - target)
     while tree is not None:  
-        #if target is less go left
+        if abs(tree.value - target) < closestDif:
+            closestTree = tree.value
+            closestDif = abs(tree.value - target)
         if target < tree.value:
-            # check if current tree is closer than the last
-            if abs(tree.value - target) < closestDif:
-                closestTree = tree.value
-                closestDif = abs(tree.value - target)
             tree = tree.left
-        # tree.value < target
         else: 
-            if abs(tree.value - target) < closestDif:
-                closestTree = tree.value
-                closestDif = abs(tree.value - target)
             tree = tree.right
+
     return closestTree 
-    
+
 # This is the class of the input tree. Do not edit.
 class BST:
     def __init__(self, value):
