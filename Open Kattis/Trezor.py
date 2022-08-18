@@ -34,7 +34,11 @@ Need to look at lines approaching the far side.
 '''
 
 
+slopes = {} #all starting points to calculate from
+slopesA = {} #Edge cases from guard's persepctive from A
+slopesB = {} #Edge cases from guard's persepctive from B
 
+#calculates roughly how many insecure exist total:
 def insecureCalc(A,B,L):
     height = abs(A-(-B)) 
     # if even number or odd number
@@ -59,19 +63,52 @@ def insecureCalc(A,B,L):
     
     return insecurePoints
 
+def addPoint(i,j):
+    if (i,j) in slopes:
+        slopes[i,j] += 1
+    else:
+        slopes[i,j] = 1
 
-def findSlopes(A,B,L):
-    height = abs(A-(-B))
-    slopes = {} 
-    slopesA = {}
-    slopesB = {}
+
+#finds edge cases that add up to an odd number
+def findEdgeCases(A,B,L):
+    if A*B*L > 10000000:
+        #print It has begun and frog
+        print(r"""\
+        
+ $$$$$$\ $$\           $$\                                 $$\                                               
+ \_$$  _|$$ |          $$ |                                $$ |                                              
+   $$ |$$$$$$\         $$$$$$$\   $$$$$$\   $$$$$$$\       $$$$$$$\   $$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$\  
+   $$ |\_$$  _|        $$  __$$\  \____$$\ $$  _____|      $$  __$$\ $$  __$$\ $$  __$$\ $$ |  $$ |$$  __$$\ 
+   $$ |  $$ |          $$ |  $$ | $$$$$$$ |\$$$$$$\        $$ |  $$ |$$$$$$$$ |$$ /  $$ |$$ |  $$ |$$ |  $$ |
+   $$ |  $$ |$$\       $$ |  $$ |$$  __$$ | \____$$\       $$ |  $$ |$$   ____|$$ |  $$ |$$ |  $$ |$$ |  $$ |
+ $$$$$$\ \$$$$  |      $$ |  $$ |\$$$$$$$ |$$$$$$$  |      $$$$$$$  |\$$$$$$$\ \$$$$$$$ |\$$$$$$  |$$ |  $$ |
+ \______| \____/       \__|  \__| \_______|\_______/       \_______/  \_______| \____$$ | \______/ \__|  \__|
+                                                                               $$\   $$ |                    
+                                                                               \$$$$$$  |                                       
+           .--._.--.
+          ( O     O )
+          /   . .   \
+         .`._______.'.
+        /(           )\
+      _/  \  \   /  /  \_
+   .~   `  \  \ /  /  '   ~.
+  {    -.   \  V  /   .-    }
+_ _`.    \  |  |  |  /    .'_ _
+>_       _} |  |  | {_       _<
+ /. - ~ ,_-'  .^.  `-_, ~ - .\
+         '-'|/   \|`-`
+                        """)
+        
+    slopesA = {} #Edge cases from guard's persepctive from A
+    slopesB = {} #Edge cases from guard's persepctive from B
 
     atemp = -A + 2
     i,j = 3 ,atemp
     while i <= L:
         while -A <= j <= B:
-            slopes[i,j] = 1 #enter them as Dict[touple] = key
-            slopesA[i,j] = 1
+            addPoint(i,j)
+            slopesA[i,j] = 1 
             j += 2
         i +=2
         j = atemp
@@ -80,22 +117,51 @@ def findSlopes(A,B,L):
     i,j = 3, btemp
     while 0 <= i <= L:
         while -A <= j <= B:
-            if (i,j) in slopes:
-                slopes[i,j] += 1
-                slopesA[i,j] = 1 
-            else:
-                slopes[i,j] = 1
+            addPoint(i,j)
             slopesB[i,j] = 1 
             j -= 2
         i += 2
         j =btemp
 
 
+    return slopes
+    print(slopes)
 
-    print(slopesA)
+def findCommonCases(A,B,L):
+    slopes.update(findEdgeCases(A,B,L))
 
+    #find (1,-A) - (1,B) from A perspective
+    i,j = 1 , -A
+    while j <= B:
+        addPoint(i,j)
+        slopesA[i,j] = 1 
+        j+= 1
+    i, j = 2 , -A + 1
+    
+    #find  (1, A+1) to (L, A+1) from A
+    while i <= L:
+        addPoint(i,j)
+        slopesA[i,j] = 1 
+        i+= 1
+    i, j = 2 , B - 1
+    
+    # from (1,B) to (1,-A)
+    i,j = 1 , -A
+    while j <= B:
+        addPoint(i,j)
+        slopesB[i,j] = 1 
+        j+= 1
+    # find to L,B-1 from B
+    while i <= L:
+        addPoint(i,j)
+        slopesB[i,j] = 1
+        i+=1
 
-findSlopes(10,0,10)
+    print(slopes)
+
+findCommonCases(1,1,3)
+# findEdgeCases(0,10,20)
+
 
 
 
