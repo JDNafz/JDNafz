@@ -63,29 +63,36 @@ def insecureCalc(A,B,L):
 def findSlopes(A,B,L):
     height = abs(A-(-B))
     slopes = {} 
+    slopesA = {}
+    slopesB = {}
 
-    atemp = 2 - A
+    atemp = -A + 2
     i,j = 3 ,atemp
-    # while i <= L:
-    #     while j <= height:
-    #         slopes[i,j] = 1 #enter them as Dict[touple] = key
-    #         j += 2
-    #     i +=2
-    #     j = atemp
+    while i <= L:
+        while -A <= j <= B:
+            slopes[i,j] = 1 #enter them as Dict[touple] = key
+            slopesA[i,j] = 1
+            j += 2
+        i +=2
+        j = atemp
 
-    btemp = B-2
+    btemp = B - 2
     i,j = 3, btemp
-    print(btemp)
     while 0 <= i <= L:
         while -A <= j <= B:
-            slopes[i,j] = 1
+            if (i,j) in slopes:
+                slopes[i,j] += 1
+                slopesA[i,j] = 1 
+            else:
+                slopes[i,j] = 1
+            slopesB[i,j] = 1 
             j -= 2
         i += 2
         j =btemp
 
 
 
-    print(slopes)
+    print(slopesA)
 
 
 findSlopes(10,0,10)
