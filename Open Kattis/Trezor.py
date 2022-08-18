@@ -25,6 +25,16 @@ Output on three separate lines the numbers of insecure, secure and super-secure 
 https://open.kattis.com/problems/trezor
 '''
 
+'''
+TODO: 
+Made some good progress on Trezor. 
+Looked at calculating lines approaching the top. 
+Need to look at lines approaching the far side. 
+
+'''
+
+
+
 def insecureCalc(A,B,L):
     height = abs(A-(-B)) 
     # if even number or odd number
@@ -50,12 +60,52 @@ def insecureCalc(A,B,L):
     return insecurePoints
 
 
+def findSlopes(A,B,L):
+    height = abs(A-(-B))
+    slopes = {} 
+
+    atemp = 2 - A
+    i,j = 3 ,atemp
+    # while i <= L:
+    #     while j <= height:
+    #         slopes[i,j] = 1 #enter them as Dict[touple] = key
+    #         j += 2
+    #     i +=2
+    #     j = atemp
+
+    btemp = B-2
+    i,j = 3, btemp
+    print(btemp)
+    while 0 <= i <= L:
+        while -A <= j <= B:
+            slopes[i,j] = 1
+            j -= 2
+        i += 2
+        j =btemp
+
+
+
+    print(slopes)
+
+
+findSlopes(10,0,10)
+
+
+
+
+
+
+
 
 
 # ------------------------------- tests -----------------------------------------------
 
 def test(testNum):
     #sample 1
+    if testNum == 0:
+        tests = [1,2,3]      
+        for i in   tests:
+            test(i)
     if testNum == 1:
         if insecureCalc(1,1,3) == 4:
             print("\n************* TEST 1 PASSED ***************************")
@@ -92,6 +142,9 @@ def test(testNum):
 # Super-secure: 9 974 861
 
 
-tests = [1,2,3]
-for i in tests:
-    test(i)
+
+
+
+#test all:
+# test(0)
+
