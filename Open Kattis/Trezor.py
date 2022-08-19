@@ -27,7 +27,7 @@ https://open.kattis.com/problems/trezor
 
 '''
 TODO: 
-I think this is broken. working on trezor2.py instead
+x think this is broken. working on trezor2.py instead
 
 
 '''
@@ -40,28 +40,28 @@ slopesB = {}
 superSecure = 0
 secure = 0
 
-def addFromA(i,j):
+def addFromA(x,y):
     global superSecure
     global secure
-    if (i,j) in slopes:
-        if slopes[i,j] == "B":
-            slopes[i,j] = "&"
+    if (x,y) in slopes:
+        if slopes[x,y] == "B":
+            slopes[x,y] = "&"
             superSecure += 1
             secure -= 1
     else:
         secure += 1
-        slopes[i,j] = "A"
-def addFromB(i,j):
+        slopes[x,y] = "A"
+def addFromB(x,y):
     global superSecure
     global secure
-    if (i,j) in slopes:
-        if slopes[i,j] == "A":
-            slopes[i,j] = "&"
+    if (x,y) in slopes:
+        if slopes[x,y] == "A":
+            slopes[x,y] = "&"
             superSecure += 1
             secure -= 1
     else:
         secure += 1
-        slopes[i,j] = "B"
+        slopes[x,y] = "B"
 
 #finds edge cases that add up to an odd number
 def findEdgeCases(A,B,L):
@@ -95,29 +95,29 @@ _ _`.    \  |  |  |  /    .'_ _
 
     #from persepctive of A
     atemp = -A + 2
-    i,j = 3 ,atemp
-    while i <= L:
-        while -A <= j <= B:
-            addFromA(i,j)
-            slopesA[i,j] = "A1"    
-            j += 2
-        i +=2
-        j = atemp
+    x,y = 3 ,atemp
+    while x <= L:
+        while -A <= y <= B:
+            addFromA(x,y)
+            slopesA[x,y] = "A1"    
+            y += 2
+        x +=2
+        y = atemp
 
     #from persepctive of B
     btemp = B - 2
-    i,j = 2, btemp
-    while 2 <= i <= L:
-        while -A <= j <= B:
-            addFromB(i,j)
-            slopesB[i,j] = "B1"
-            j += 1
-        while -A+1 <= j <= B:
-            addFromB(i,j)
-            slopesB[i,j] = "B2"
-            j -= 2
-        i += 1
-        j =btemp
+    x,y = 2, btemp
+    while 2 <= x <= L:
+        while -A <= y <= B:
+            addFromB(x,y)
+            slopesB[x,y] = "B1"
+            y += 1
+        while -A+1 <= y <= B:
+            addFromB(x,y)
+            slopesB[x,y] = "B2"
+            y -= 2
+        x += 1
+        y =btemp
 
     # print("C",slopesC)
     # print("D", slopesD)
@@ -125,36 +125,36 @@ _ _`.    \  |  |  |  /    .'_ _
 
 def findCommonCases(A,B,L):
     #find (1,-A) - (1,B) from A 
-    i,j = 1 , -A
-    while j <= B:
-        addFromA(i,j)
-        slopesA[i,j] = "A2" 
-        j+= 1
-    i, j = 2 , -A + 1
+    x,y = 1 , -A
+    while y <= B:
+        addFromA(x,y)
+        slopesA[x,y] = "A2" 
+        y += 1
+    x, y = 2 , -A + 1
     
     #find  (1, -A+1) to (L, -A+1) from A
-    #i needs to start at 2, to not hit the point already checked in column1
-    i,j = 2, -A + 1
-    while i <= L:
-        addFromA(i,j)
-        slopesA[i,j] = "A3"
-        i+= 1
-    i, j = 2 , B - 1
+    #x needs to start at 2, to not hit the point already checked in column1
+    x,y = 2, -A + 1
+    while x <= L:
+        addFromA(x,y)
+        slopesA[x,y] = "A3"
+        x += 1
+    x, y = 2 , B - 1
     
     # from (1,B) to (1,-A) from B
-    i,j = 1 , -A
-    while j <= B:
-        addFromB(i,j)
-        slopesB[i,j] = "B3"
-        j+= 1
+    x,y = 1 , -A
+    while y <= B:
+        addFromB(x,y)
+        slopesB[x,y] = "B3"
+        y += 1
 
     # find to from (2,B-1)(L,B-1)  from B
-    #i needs to start at 2, to not hit the point already checked in column1  
-    i,j = 2 , B - 1      
-    while i <= L:
-        addFromB(i,j)
-        slopesB[i,j] = "B4"
-        i+=1
+    #x needs to start at 2, to not hit the point already checked in column1  
+    x,y = 2 , B - 1      
+    while x <= L:
+        addFromB(x,y)
+        slopesB[x,y] = "B4"
+        x +=1
     return slopes
 
 def trezorSecurity(A,B,L):
@@ -171,24 +171,23 @@ def trezorSecurity(A,B,L):
     print("Insecure:",insecure)
     print("secure:",secure)
     print("superSecure:",superSecure)  
-    # print("slopes:",slopes)
+    print(slopesB)
 
 
+trezorSecurity(0,6,6)
 
-trezorSecurity(1,1,3)
-# value = slopes.get(key)
-print(slopes.get((1,1)))
-# print(slopes.get())
-
-ampersand = []
-for key,value in slopes:
-    if value == "&":
-        ampersand.append(key,value)
-
-print(ampersand)
-
-# print(slopesA)
 # print(slopesB)
+# problemchildren = slopesB.get((2,1))
+# print(problemchildren)
 
-# findEdgeCases(0,10,20)
+'''
+#THIS IS NOT WORKING TO GET THE KEY
+# ampersand = []
+# for key,value in slopes:
+#     if value == "&":
+#         print("yup")
+#         ampersand.append(key,value)
+# print(ampersand)
+'''
+
 
