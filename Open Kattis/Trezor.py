@@ -24,10 +24,31 @@ Output on three separate lines the numbers of insecure, secure and super-secure 
 
 https://open.kattis.com/problems/trezor
 '''
+# ROW COL
+# i   j 
+def slopeCalc():
+    pass
 
+def trezor(A,B,L):
+    H = (A+B+1)
+    banks = [0,0,0]
+    # for i in range(H):
+    #     banks.append([None]*L)
 
-def findEdgeCases(A,B,L):
+    # for j in range(L):
+    #     for i in range(H):
+    #         if banks[i][j] is None:
+    #             banks[i][j] = 1
+    #             slopeCalc(i,j)
+    bankB = [1,2,5]
+    # for i in reversed(banks): 
+    #     bankB.append(i)
 
-    for
+    for i in range(len(X)):
+    # iterate through columns
+    for j in range(len(X[0])):
+        result[i][j] = X[i][j] + Y[i][j]
 
+    print(banks)
 
+trezor(0,3,5)
