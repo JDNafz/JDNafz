@@ -27,9 +27,9 @@ https://open.kattis.com/problems/trezor
 
 '''
 TODO: 
-Made some good progress on Trezor. 
-Looked at calculating lines approaching the top. 
-Need to look at lines approaching the far side. 
+-Add input functionality
+-Add proper Output
+-Calculate ancestors
 
 '''
 
@@ -37,38 +37,30 @@ Need to look at lines approaching the far side.
 slopes = {} #all starting points to calculate from
 slopesA = {} #Edge cases from guard's persepctive from A
 slopesB = {} #Edge cases from guard's persepctive from B
-
-#calculates roughly how many insecure exist total:
-def insecureCalc(A,B,L):
-    height = abs(A-(-B)) 
-    # if even number or odd number
-    if height % 2 == 0:
-        rangecalc = int(height/2)
-    else:
-        rangecalc = int(height/2)+1
-
-    insecurePoints = 0 
-    for i in range(rangecalc):
-        print("Loop#",i)
-        if i == 0:
-            insecurePoints += 2*(L-1)
-            print("+", (L-1))
-        else:
-            insecurePoints += 2*((height//i)-1)
-            print("+",(height//i)-1)
-    print("height:",height)
-    print("rangecalc", rangecalc)
-    print("InsecurePoints:", insecurePoints)
-        
-    
-    return insecurePoints
-
-def addPoint(i,j):
+superSecure = 0
+secure = 0
+def addFromA(i,j):
+    global superSecure
+    global secure
     if (i,j) in slopes:
-        slopes[i,j] += 1
+        if slopes[i,j] == "B":
+            slopes[i,j] = "&"
+            superSecure += 1
+            secure -= 1
     else:
-        slopes[i,j] = 1
-
+        secure += 1
+        slopes[i,j] = "A"
+def addFromB(i,j):
+    global superSecure
+    global secure
+    if (i,j) in slopes:
+        if slopes[i,j] == "A":
+            slopes[i,j] = "&"
+            superSecure += 1
+            secure -= 1
+    else:
+        secure += 1
+        slopes[i,j] = "B"
 
 #finds edge cases that add up to an odd number
 def findEdgeCases(A,B,L):
@@ -102,66 +94,95 @@ _ _`.    \  |  |  |  /    .'_ _
         
     slopesA = {} #Edge cases from guard's persepctive from A
     slopesB = {} #Edge cases from guard's persepctive from B
+    slopesC = {}
+    slopesD = {}
+    slopesE = {}
 
+    #from persepctive of A
     atemp = -A + 2
     i,j = 3 ,atemp
     while i <= L:
         while -A <= j <= B:
-            addPoint(i,j)
-            slopesA[i,j] = 1 
+            addFromA(i,j)
+            slopesC[i,j] = 1    
             j += 2
         i +=2
         j = atemp
 
+    #from persepctive of B
     btemp = B - 2
-    i,j = 3, btemp
-    while 0 <= i <= L:
-        while -A <= j <= B:
-            addPoint(i,j)
-            slopesB[i,j] = 1 
+    i,j = 2, btemp
+    while 2 <= i <= L:
+        # while -A <= j <= B:
+        #     addFromB(i,j)
+        #     slopesE[i,j] = 1
+        #     j += 1
+        while -A+1 <= j <= B:
+            addFromB(i,j)
+            slopesD[i,j] = 1
             j -= 2
-        i += 2
+        i += 1
         j =btemp
 
-
+    print("C",slopesC)
+    print("D", slopesD)
     return slopes
-    print(slopes)
 
 def findCommonCases(A,B,L):
-    slopes.update(findEdgeCases(A,B,L))
-
-    #find (1,-A) - (1,B) from A perspective
+    #find (1,-A) - (1,B) from A 
     i,j = 1 , -A
     while j <= B:
-        addPoint(i,j)
+        addFromA(i,j)
         slopesA[i,j] = 1 
         j+= 1
     i, j = 2 , -A + 1
     
-    #find  (1, A+1) to (L, A+1) from A
+    #find  (1, -A+1) to (L, -A+1) from A
+    #i needs to start at 2, to not hit the point already checked in column1
+    i,j = 2, -A + 1
     while i <= L:
-        addPoint(i,j)
+        addFromA(i,j)
         slopesA[i,j] = 1 
         i+= 1
     i, j = 2 , B - 1
     
-    # from (1,B) to (1,-A)
+    # from (1,B) to (1,-A) from B
     i,j = 1 , -A
     while j <= B:
-        addPoint(i,j)
-        slopesB[i,j] = 1 
+        addFromB(i,j)
+        slopesB[i,j] = 1
         j+= 1
-    # find to L,B-1 from B
+
+    # find to from (2,B-1)(L,B-1)  from B
+    #i needs to start at 2, to not hit the point already checked in column1  
+    i,j = 2 , B - 1      
     while i <= L:
-        addPoint(i,j)
+        addFromB(i,j)
         slopesB[i,j] = 1
         i+=1
+    return slopes
+
+def trezorSecurity(A,B,L):
+    print("running...")
+    slopes.update(findEdgeCases(A,B,L))
+    slopes.update(findCommonCases(A,B,L))
+    totalBanks = (A + 1 + B)*L
+    insecure = totalBanks - superSecure - secure
+    # for values in slopes:
+    #     if value == 1:
+    #         secure += 1
 
 
-findCommonCases(1,1,3)
-# print(slopes)
+    print(insecure)
+    print(secure)
+    print(superSecure)  
+    print(slopes)
+
+
+
+trezorSecurity(1,1,3)
 # print(slopesA)
-print(slopesB)
+# print(slopesB)
 
 # findEdgeCases(0,10,20)
 
@@ -183,7 +204,7 @@ def test(testNum):
         for i in   tests:
             test(i)
     if testNum == 1:
-        if insecureCalc(1,1,3) == 4:
+        if trezorSecurity(1,1,3) == 4:
             print("\n************* TEST 1 PASSED ***************************")
             print("for now....")
         else: 
@@ -195,7 +216,7 @@ def test(testNum):
 
     #sample 2
     if testNum == 2:
-        if insecureCalc(2,3,4) == 16:
+        if trezorSecurity(2,3,4) == 16:
             print("\n************* TEST 2 PASSED ***************************")
             print("for now....")
         else:
@@ -206,16 +227,16 @@ def test(testNum):
 
     #sample 3
     if testNum == 3:
-        if insecureCalc(7, 11, 1000000) == 9025139:
+        if trezorSecurity(7, 11, 1000000) == 9025139:
             print("\n************* TEST 3 PASSED ***************************")
             print("for now....")
         else:
             print("\n-------------- TEST 3 FAILED -------------- ")
             print("inscureCalc returned", insecureCalc(7, 11, 1000000),"but expected", 9025139, "\n a difference of ",9025139 - insecureCalc(7, 11, 1000000))
-#     Insecure: 6 723 409
-#       Secure: 2 301 730
-# Total insecure:       9025139
-# Super-secure: 9 974 861
+    #     Insecure: 6 723 409
+    #       Secure: 2 301 730
+    # Total insecure:       9025139
+    # Super-secure: 9 974 861
 
 
 
