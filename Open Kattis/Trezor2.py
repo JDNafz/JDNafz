@@ -32,7 +32,7 @@ TODO:
 -Calculate ancestors
 
 '''
-
+import math
 
 slopes = {} #all starting points to calculate from
 slopesA = {} #Edge cases from guard's persepctive from A
@@ -65,12 +65,16 @@ def addFromB(i,j):
 
 #finds edge cases that add up to an odd number
 def slopesCalc(A,B,L):
+    H = A+B+1
     print("x range:", L)
-    print("y range:", A+B+1)
-    # for x in range(L-1):
-    #     print(x+1)
-    for y in range(-A,B):
-        print("",y)
+    print("y range:", H)
+    for x in range(L):
+        # print(x+1)
+        for y in range(H):
+            # print("",y)
+            print(
+                (x,y))
+            
 
 
 
@@ -80,24 +84,11 @@ def trezorSecurity(A,B,L):
 
     slopesCalc(A,B,L)
 
-
     totalBanks = (A + 1 + B)*L
     insecure = totalBanks - superSecure - secure
-    # for values in slopes:
-    #     if value == 1:
-    #         secure += 1
-
-
     # print(insecure)
     # print(secure)
     # print(superSecure)  
     # print(slopes)
-
-
-
-trezorSecurity(0,5,5)
-# print(slopesA)
-# print(slopesB)
-
-# findEdgeCases(0,10,20)
+trezorSecurity(1,1,3)
 

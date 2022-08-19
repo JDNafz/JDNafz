@@ -27,18 +27,19 @@ https://open.kattis.com/problems/trezor
 
 '''
 TODO: 
--Add input functionality
--Add proper Output
--Calculate ancestors
+I think this is broken. working on trezor2.py instead
+
 
 '''
 
 
-slopes = {} #all starting points to calculate from
-slopesA = {} #Edge cases from guard's persepctive from A
-slopesB = {} #Edge cases from guard's persepctive from B
+slopes = {} 
+slopesA = {}
+slopesB = {}
+
 superSecure = 0
 secure = 0
+
 def addFromA(i,j):
     global superSecure
     global secure
@@ -91,12 +92,6 @@ _ _`.    \  |  |  |  /    .'_ _
  /. - ~ ,_-'  .^.  `-_, ~ - .\
          '-'|/   \|`-`
                         """)
-        
-    slopesA = {} #Edge cases from guard's persepctive from A
-    slopesB = {} #Edge cases from guard's persepctive from B
-    slopesC = {}
-    slopesD = {}
-    slopesE = {}
 
     #from persepctive of A
     atemp = -A + 2
@@ -104,7 +99,7 @@ _ _`.    \  |  |  |  /    .'_ _
     while i <= L:
         while -A <= j <= B:
             addFromA(i,j)
-            slopesC[i,j] = 1    
+            slopesA[i,j] = "A1"    
             j += 2
         i +=2
         j = atemp
@@ -113,19 +108,19 @@ _ _`.    \  |  |  |  /    .'_ _
     btemp = B - 2
     i,j = 2, btemp
     while 2 <= i <= L:
-        # while -A <= j <= B:
-        #     addFromB(i,j)
-        #     slopesE[i,j] = 1
-        #     j += 1
+        while -A <= j <= B:
+            addFromB(i,j)
+            slopesB[i,j] = "B1"
+            j += 1
         while -A+1 <= j <= B:
             addFromB(i,j)
-            slopesD[i,j] = 1
+            slopesB[i,j] = "B2"
             j -= 2
         i += 1
         j =btemp
 
-    print("C",slopesC)
-    print("D", slopesD)
+    # print("C",slopesC)
+    # print("D", slopesD)
     return slopes
 
 def findCommonCases(A,B,L):
@@ -133,7 +128,7 @@ def findCommonCases(A,B,L):
     i,j = 1 , -A
     while j <= B:
         addFromA(i,j)
-        slopesA[i,j] = 1 
+        slopesA[i,j] = "A2" 
         j+= 1
     i, j = 2 , -A + 1
     
@@ -142,7 +137,7 @@ def findCommonCases(A,B,L):
     i,j = 2, -A + 1
     while i <= L:
         addFromA(i,j)
-        slopesA[i,j] = 1 
+        slopesA[i,j] = "A3"
         i+= 1
     i, j = 2 , B - 1
     
@@ -150,7 +145,7 @@ def findCommonCases(A,B,L):
     i,j = 1 , -A
     while j <= B:
         addFromB(i,j)
-        slopesB[i,j] = 1
+        slopesB[i,j] = "B3"
         j+= 1
 
     # find to from (2,B-1)(L,B-1)  from B
@@ -158,7 +153,7 @@ def findCommonCases(A,B,L):
     i,j = 2 , B - 1      
     while i <= L:
         addFromB(i,j)
-        slopesB[i,j] = 1
+        slopesB[i,j] = "B4"
         i+=1
     return slopes
 
@@ -173,33 +168,27 @@ def trezorSecurity(A,B,L):
     #         secure += 1
 
 
-    print(insecure)
-    print(secure)
-    print(superSecure)  
-    print(slopes)
+    print("Insecure:",insecure)
+    print("secure:",secure)
+    print("superSecure:",superSecure)  
+    # print("slopes:",slopes)
 
 
 
 trezorSecurity(1,1,3)
+# value = slopes.get(key)
+print(slopes.get((1,1)))
+# print(slopes.get())
+
+ampersand = []
+for key,value in slopes:
+    if value == "&":
+        ampersand.append(key,value)
+
+print(ampersand)
+
 # print(slopesA)
 # print(slopesB)
 
 # findEdgeCases(0,10,20)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#test all:
-# test(0)
 
