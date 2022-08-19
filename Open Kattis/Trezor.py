@@ -157,9 +157,12 @@ def findCommonCases(A,B,L):
         slopesB[i,j] = 1
         i+=1
 
-    print(slopes)
 
 findCommonCases(1,1,3)
+# print(slopes)
+# print(slopesA)
+print(slopesB)
+
 # findEdgeCases(0,10,20)
 
 
