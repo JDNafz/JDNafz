@@ -195,48 +195,6 @@ trezorSecurity(1,1,3)
 
 
 
-# ------------------------------- tests -----------------------------------------------
-
-def test(testNum):
-    #sample 1
-    if testNum == 0:
-        tests = [1,2,3]      
-        for i in   tests:
-            test(i)
-    if testNum == 1:
-        if trezorSecurity(1,1,3) == 4:
-            print("\n************* TEST 1 PASSED ***************************")
-            print("for now....")
-        else: 
-            print("\n-------------- TEST 1 FAILED -------------- ")
-        # Answers:
-        #     Insecure: 2
-        #       Secure: 2
-        # Super-secure: 5
-
-    #sample 2
-    if testNum == 2:
-        if trezorSecurity(2,3,4) == 16:
-            print("\n************* TEST 2 PASSED ***************************")
-            print("for now....")
-        else:
-            print("\n-------------- TEST 2 FAILED -------------- ")
-#     Insecure: 0
-#       Secure: 16
-# Super-secure: 8
-
-    #sample 3
-    if testNum == 3:
-        if trezorSecurity(7, 11, 1000000) == 9025139:
-            print("\n************* TEST 3 PASSED ***************************")
-            print("for now....")
-        else:
-            print("\n-------------- TEST 3 FAILED -------------- ")
-            print("inscureCalc returned", insecureCalc(7, 11, 1000000),"but expected", 9025139, "\n a difference of ",9025139 - insecureCalc(7, 11, 1000000))
-    #     Insecure: 6 723 409
-    #       Secure: 2 301 730
-    # Total insecure:       9025139
-    # Super-secure: 9 974 861
 
 
 
