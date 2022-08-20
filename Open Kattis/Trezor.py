@@ -32,29 +32,24 @@ https://open.kattis.com/problems/trezor
 # i
 
 
-
+#calculate all obscured points set to 0
 def slopeCalc(i,j,H,L,bankA):
-    up,over = i,j
+    up,over = i,j+1
     i += up
     j += over
-    while i < H and j <L:
-        print("-----------------------------------------")
-        print("(i,j):(",i,j,")H:",H,"L",L)
-        print("-------------------------------------------")
+    # print("Increments by over",over,"and up:",up)    
+    while i < H and j < L:
+        # print("(j,i)(",j,",",i,") SET TO 0")
         bankA[i][j] = 0
-        print("bankA:",bankA)
         i += up
         j += over
-        print("i is now",i)
-        print("j is now",j)
+
     return bankA
 
 
 def trezor(A,B,L):
     H = (A+B+1)
-    banks = []
-    bankA = []
-    bankB = []
+    banks, bankA,bankB,insecure, secure, superSecure = [],[],[],0,0,0
     #set matrix to None
     for i in range(H):
         bankA.append([None]*L)
@@ -64,19 +59,24 @@ def trezor(A,B,L):
     for j in range(L):
         for i in range(H):
             if bankA[i][j] is None:
+                # set point to 1 meaning secure!
                 bankA[i][j] = 1
-                print("preSlopeCalc",i,j)
-                if i!= 0 or j != 0:
-                    print("---SLOPE CALC----")
-                    slopeCalc(i,j,H,L,bankA)
-    # print(bankA)
+
+                # print("slopeCalc([",i,"][",j,"])")
+                #set obscured to 0
+                slopeCalc(i,j,H,L,bankA)
     for i in reversed(bankA): 
         bankB.append(i)
     # print(bankB)
     for i in range(len(bankA)):
         for j in range(len(bankA[0])):
             banks[i][j] = bankA[i][j] + bankB[i][j]
-
-    return banks
+            if banks[i][j] == 0:
+                insecure += 1
+            elif banks[i][j] == 1:
+                secure += 1
+            else:
+                superSecure +=1
+    return insecure, secure, superSecure
 
 print(trezor(1,1,3))
