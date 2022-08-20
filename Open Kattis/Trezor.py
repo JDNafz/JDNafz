@@ -24,31 +24,59 @@ Output on three separate lines the numbers of insecure, secure and super-secure 
 
 https://open.kattis.com/problems/trezor
 '''
-# ROW COL
-# i   j 
-def slopeCalc():
-    pass
+# ROW   COL
+# i     j j j j j j j j j j j j 
+# i
+# i
+# i
+# i
+
+
+
+def slopeCalc(i,j,H,L,bankA):
+    up,over = i,j
+    i += up
+    j += over
+    while i < H and j <L:
+        print("-----------------------------------------")
+        print("(i,j):(",i,j,")H:",H,"L",L)
+        print("-------------------------------------------")
+        bankA[i][j] = 0
+        print("bankA:",bankA)
+        i += up
+        j += over
+        print("i is now",i)
+        print("j is now",j)
+    return bankA
+
 
 def trezor(A,B,L):
     H = (A+B+1)
-    banks = [0,0,0]
-    # for i in range(H):
-    #     banks.append([None]*L)
+    banks = []
+    bankA = []
+    bankB = []
+    #set matrix to None
+    for i in range(H):
+        bankA.append([None]*L)
+        banks.append([None]*L)
+    
+    #if you find None -> slopeCalc
+    for j in range(L):
+        for i in range(H):
+            if bankA[i][j] is None:
+                bankA[i][j] = 1
+                print("preSlopeCalc",i,j)
+                if i!= 0 or j != 0:
+                    print("---SLOPE CALC----")
+                    slopeCalc(i,j,H,L,bankA)
+    # print(bankA)
+    for i in reversed(bankA): 
+        bankB.append(i)
+    # print(bankB)
+    for i in range(len(bankA)):
+        for j in range(len(bankA[0])):
+            banks[i][j] = bankA[i][j] + bankB[i][j]
 
-    # for j in range(L):
-    #     for i in range(H):
-    #         if banks[i][j] is None:
-    #             banks[i][j] = 1
-    #             slopeCalc(i,j)
-    bankB = [1,2,5]
-    # for i in reversed(banks): 
-    #     bankB.append(i)
+    return banks
 
-    for i in range(len(X)):
-    # iterate through columns
-    for j in range(len(X[0])):
-        result[i][j] = X[i][j] + Y[i][j]
-
-    print(banks)
-
-trezor(0,3,5)
+print(trezor(1,1,3))
