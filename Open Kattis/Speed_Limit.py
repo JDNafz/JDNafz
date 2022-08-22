@@ -2,6 +2,7 @@
 Given a set number of miles and the number of hours, calculate 
 the total number of miles traveled.
 https://open.kattis.com/problems/speedlimit 
+🟢 1.5 Easy Difficulty
 '''
 
 
