@@ -5,7 +5,9 @@ https://open.kattis.com/problems/chess
 The basic premise of this code is to calculate how a bishop 
 would move from any given position on the chessboard to any 
 other position. Check out the full description of the coding 
-challenge here: https://open.kattis.com/submissions/9221963
+challenge here:https://open.kattis.com/problems/chess 
+
+Difficulty rating 2.9🟡 medium
 
 """
 

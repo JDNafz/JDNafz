@@ -2,6 +2,7 @@
 Write a program that echos back every other word
 
 https://open.kattis.com/problems/oddecho
+🟢 1.3  Easy Difficulty
 '''
 
 Numberofwords = int(input())

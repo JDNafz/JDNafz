@@ -4,6 +4,8 @@
 #view the full propmpt here: 
 # https://open.kattis.com/problems/alphabetspam
 
+# Difficulty 1.4 🟢 Easy
+
 
 
 

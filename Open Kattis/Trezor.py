@@ -1,6 +1,20 @@
-'''
-Difficulty 5.5 - Hard
 
+# Difficulty 🔴 5.5 - Hard
+
+# This was not a successful submission. The prompt has a CPU time limit of 1 second. 
+# current code takes 7.484375 seconds on the third example, though running it on my 
+# machine it produces the correct answer.
+
+# The longest possible calculation processes 10^ data points, and runs out of memmory 
+# on my machine. So the code is almost correct. All the successful solutions were 
+# written in C++, I suspect it may be impossible to write a correct answer using python.
+
+
+
+
+
+# Prompt:
+'''
 Mirko decided to open a new business—bank vaults. A branch of the 
 bank can be visualized in a plane, vaults being points in the plane. 
 Mirko’s branch contains exactly L*(A + 1 + B) vaults, so that each point with 
@@ -84,7 +98,7 @@ def trezor(A = None, B = None, L = None):
     # return insecure, secure, superSecure
 
 
-trezor(7,11,1000000)
+trezor(2000,2000,1000000000)
 print(time.process_time())
 
 

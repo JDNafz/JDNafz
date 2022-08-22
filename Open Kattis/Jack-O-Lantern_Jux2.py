@@ -4,6 +4,7 @@ different sets of eyes, noses, mouthes
 
 
 https://open.kattis.com/problems/jackolanternjuxtaposition
+🟢 1.4  Easy Difficulty
 '''
 
 
