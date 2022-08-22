@@ -17,10 +17,13 @@
 | []()                             |     |       |
 
 *Trezor -- may be impossible to submit correctly in Python, see file for details.
+
 *Shebas Amoebas -- Unfinished
 
 
 
 ###🟢 Easy   (1.1 - 2.7)
+
 ###🟡 Medium (2.8 - 5.4)
+
 ###🔴 Hard   (5.5 - 9.6)
