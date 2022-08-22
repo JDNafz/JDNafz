@@ -15,3 +15,4 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Non-Constructible Change](/AlgoExpert/Non-Constructible%20Change.py)             | 🟢         | Arrays               |   
 | [Find Closest Value in BST](/AlgoExpert/Find%20Closest%20Value%20in%20BST.py)     | 🟢         | Binary Search Trees  |
 | [Node Depths](/AlgoExpert/Node%20Depths.py)                                       | 🟢         | Binary Search Trees  |  
+| [Depth-First Search](/AlgoExpert/Depth-First%20Search.py)                         | 🟢         | Graphs               |  
