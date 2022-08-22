@@ -14,11 +14,13 @@
 | [Autori](/Open%20Kattis/Autori.py)                                                | 🟢 1.3    | Strings       |
 | [Odd Echo](/Open%20Kattis/Odd%20Echo.py)                                          | 🟢 1.3    | Lists         |
 | [Shebas Amoebas](/Open%20Kattis/ShebasAmoebas.py)*                                | 🟢 1.8    |       |
-| []()                             | 🟢    |       |
-| []()                             | 🟢    |       |
+| []()                             |     |       |
 
 *Trezor -- may be impossible to submit correctly in Python, see file for details.
 *Shebas Amoebas -- Unfinished
+
+
+
 ###🟢 Easy   (1.1 - 2.7)
 ###🟡 Medium (2.8 - 5.4)
 ###🔴 Hard   (5.5 - 9.6)
