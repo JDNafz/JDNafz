@@ -4,6 +4,8 @@ independent loops are formed into amoebas.
 
 
 https://open.kattis.com/problems/amoebas
+
+🟢 1.8 Easy Difficulty
 '''
 #UNFINISHED NOT SUBMITTED YET
 #TODO: Review all code and submit
