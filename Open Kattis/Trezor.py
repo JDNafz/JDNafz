@@ -30,9 +30,8 @@ https://open.kattis.com/problems/trezor
 # i
 # i
 # i
+import time
 
-
-#calculate all obscured points set to 0
 def slopeCalc(i,j,H,L,bankA):
     up,over = i,j+1
     i += up
@@ -43,11 +42,15 @@ def slopeCalc(i,j,H,L,bankA):
         bankA[i][j] = 0
         i += up
         j += over
-
     return bankA
 
 
-def trezor(A,B,L):
+def trezor(A = None, B = None, L = None):
+    if A == None and B == None and L == None:
+        inString = input().split()
+        A, B = int(inString[0]), int(inString[1])
+        L = int(input())
+
     H = (A+B+1)
     banks, bankA,bankB,insecure, secure, superSecure = [],[],[],0,0,0
     #set matrix to None
@@ -77,6 +80,18 @@ def trezor(A,B,L):
                 secure += 1
             else:
                 superSecure +=1
-    return insecure, secure, superSecure
+    print(insecure, secure, superSecure,sep="\n")
+    # return insecure, secure, superSecure
 
-print(trezor(1,1,3))
+
+trezor(7,11,1000000)
+print(time.process_time())
+
+
+# print(time.process_time(trezor(7,11,11)))
+
+# Test 3 results
+# 6723409
+# 2301730
+# 9974861
+# 7.703125 SECONDS! Needs to be under 1
