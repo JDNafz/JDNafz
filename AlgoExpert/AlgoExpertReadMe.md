@@ -17,7 +17,7 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Node Depths](/AlgoExpert/Node%20Depths.py)                                       | 🟢         | Binary Search Trees  |  
 | [Branch Sums](/AlgoExpert/Branch%20Sums.py)                                       | 🟢         | Binary Trees         |   
 | [Depth-First Search](/AlgoExpert/Depth-First%20Search.py)                         | 🟢         | Graphs               |  
-| []()                         |          |         | 
+| [Minimum Wait Time](/AlgoExpert/Minimum%20Wait%20Time.py)                         | 🟢         | Arrays               | 
 
 🟢 Easy
 🔵 Medium
