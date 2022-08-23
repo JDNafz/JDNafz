@@ -1,3 +1,10 @@
+'''
+
+
+https://www.algoexpert.io/questions/tandem-bicycle
+'''
+
+
 def tandemBicycle(redShirtSpeeds, blueShirtSpeeds, fastest):
     totalSpeed = 0
     if fastest == True:
