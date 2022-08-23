@@ -1,6 +1,8 @@
 '''
+for to lists paired together find the max 
+values of each pair, and total them. also find the minimum.
 
-
+🟢 Easy Difficulty
 https://www.algoexpert.io/questions/tandem-bicycle
 '''
 
