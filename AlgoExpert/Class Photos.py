@@ -14,12 +14,8 @@ def classPhotos(redShirtHeights, blueShirtHeights):
     for idx, redshirt in enumerate(redShirtHeights):
         if max(redShirtHeights) > max(blueShirtHeights):
             if redshirt <= blueShirtHeights[idx]:
-                print("False")
                 return False
         else:
-            if redshirt >= blueShirtHeights[idx]:
-                print("False")
+            if redshirt >= blueShirtHeights[idx]:  
                 return False
-    print("True")
     return True
-
