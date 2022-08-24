@@ -20,6 +20,7 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Minimum Wait Time](/AlgoExpert/Minimum%20Wait%20Time.py)                         | 🟢         | Arrays               | 
 | [Class Photos](/AlgoExpert/Class%20Photos.py)                                     | 🟢         | Greedy Algorithms    | 
 | [Tandem Bicycle](/AlgoExpert/Tandem%20Bicycle.py)                                 | 🟢         | Greedy Algorithms    | 
+| [Product Sum](/AlgoExpert/Product%20Sum.py)                                       | 🟢         | Arrays               | 
 | []()                         | 🟢         | Arrays               | 
 
 🟢 Easy
