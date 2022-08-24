@@ -18,7 +18,11 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Branch Sums](/AlgoExpert/Branch%20Sums.py)                                       | 🟢         | Binary Trees         |   
 | [Depth-First Search](/AlgoExpert/Depth-First%20Search.py)                         | 🟢         | Graphs               |  
 | [Nth Fibonacci](/AlgoExpert/Nth%20Fibonacci.py)                                   | 🟢         | Iterative            | 
-| []()                         |          |         | 
+| [Minimum Wait Time](/AlgoExpert/Minimum%20Wait%20Time.py)                         | 🟢         | Arrays               | 
+| [Class Photos](/AlgoExpert/Class%20Photos.py)                                     | 🟢         | Greedy Algorithms    | 
+| [Tandem Bicycle](/AlgoExpert/Tandem%20Bicycle.py)                                 | 🟢         | Greedy Algorithms    | 
+| [Product Sum](/AlgoExpert/Product%20Sum.py)                                       | 🟢         | Arrays               | 
+| []()                         | 🟢         | Arrays               | 
 
 🟢 Easy
 🔵 Medium
