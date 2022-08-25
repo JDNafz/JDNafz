@@ -25,6 +25,7 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Find Three Largest Numbers](/AlgoExpert/Find%20Three%20Largest%20Numbers.py)     | 🟢         | Arrays               | 
 | [Bubble Sort](/AlgoExpert/Bubble%20Sort.py)                                       | 🟢         | Arrays               | 
 | [Insertion Sort](/AlgoExpert/Insertion%20Sort.py)                                 | 🟢         | Arrays               | 
+| [Selection Sort](/AlgoExpert/Selection%20Sort.py)                                 | 🟢         | Arrays               | 
 | []()                         | 🟢         | Arrays               | 
 
 🟢 Easy
