@@ -28,7 +28,9 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Selection Sort](/AlgoExpert/Selection%20Sort.py)                                 | 🟢         | Sorting Alorithm     | 
 | [Palindrome Check](/AlgoExpert/Palindrome%20Check.py)                             | 🟢         | Strings              | 
 | [Caesar Cipher Encryptor.py](/AlgoExpert/Caesar%20Cipher%20Encryptor.py)          | 🟢         | Strings              | 
+| [Run-Length Encoding](/AlgoExpert/Run-Length%20Encoding.py)                       | 🟢         | Strings             | 
 | []()                         | 🟢         | Strings             | 
+
 
 🟢 Easy
 🔵 Medium
