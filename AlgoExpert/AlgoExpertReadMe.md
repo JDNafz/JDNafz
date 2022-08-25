@@ -29,8 +29,8 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Palindrome Check](/AlgoExpert/Palindrome%20Check.py)                             | 🟢         | Strings              | 
 | [Caesar Cipher Encryptor.py](/AlgoExpert/Caesar%20Cipher%20Encryptor.py)          | 🟢         | Strings              | 
 | [Run-Length Encoding](/AlgoExpert/Run-Length%20Encoding.py)                       | 🟢         | Strings             | 
+| [Generate Documuent](/AlgoExpert/Generate%20Document.py)                          | 🟢         | Strings             | 
 | []()                         | 🟢         | Strings             | 
-
 
 🟢 Easy
 🔵 Medium
