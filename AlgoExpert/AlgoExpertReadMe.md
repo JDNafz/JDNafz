@@ -11,28 +11,30 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | []()                         | 🔵         |           | 
 | []()                         | 🔵         |           | 
 | [Two Number Sum](/AlgoExpert/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
-| [Sorted Squared Array](/AlgoExpert/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
-| [Non-Constructible Change](/AlgoExpert/Non-Constructible%20Change.py)             | 🟢         | Arrays               |   
+| [Sorted Squared Array](/AlgoExpert/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   
 | [Tournament Winner](/AlgoExpert/Tournament%20Winner.py)                           | 🟢         | Arrays, Dictionary   |   
+| [Non-Constructible Change](/AlgoExpert/Non-Constructible%20Change.py)             | 🟢         | Arrays               |   
 | [Find Closest Value in BST](/AlgoExpert/Find%20Closest%20Value%20in%20BST.py)     | 🟢         | Binary Search Trees  |
-| [Node Depths](/AlgoExpert/Node%20Depths.py)                                       | 🟢         | Binary Search Trees  |  
 | [Branch Sums](/AlgoExpert/Branch%20Sums.py)                                       | 🟢         | Binary Trees         |   
+| [Node Depths](/AlgoExpert/Node%20Depths.py)                                       | 🟢         | Binary Search Trees  |  
 | [Depth-First Search](/AlgoExpert/Depth-First%20Search.py)                         | 🟢         | Graphs               |  
-| [Nth Fibonacci](/AlgoExpert/Nth%20Fibonacci.py)                                   | 🟢         | Iterative            | 
 | [Minimum Wait Time](/AlgoExpert/Minimum%20Wait%20Time.py)                         | 🟢         | Arrays               | 
 | [Class Photos](/AlgoExpert/Class%20Photos.py)                                     | 🟢         | Greedy Algorithms    | 
 | [Tandem Bicycle](/AlgoExpert/Tandem%20Bicycle.py)                                 | 🟢         | Greedy Algorithms    | 
+| [Remove Duplicates...](/AlgoExpert/Remove%20Duplicates.py)                        | 🟢         | Linked Lists         | 
+| [Nth Fibonacci](/AlgoExpert/Nth%20Fibonacci.py)                                   | 🟢         | Iterative            | 
 | [Product Sum](/AlgoExpert/Product%20Sum.py)                                       | 🟢         | Arrays               | 
+| [Binary Search](/AlgoExpert/Binary%20Search.py)                                   | 🟢         | Graphs               | 
 | [Find Three Largest Numbers](/AlgoExpert/Find%20Three%20Largest%20Numbers.py)     | 🟢         | Arrays               | 
 | [Bubble Sort](/AlgoExpert/Bubble%20Sort.py)                                       | 🟢         | Sorting Alorithm     | 
 | [Insertion Sort](/AlgoExpert/Insertion%20Sort.py)                                 | 🟢         | Sorting Alorithm     | 
 | [Selection Sort](/AlgoExpert/Selection%20Sort.py)                                 | 🟢         | Sorting Alorithm     | 
 | [Palindrome Check](/AlgoExpert/Palindrome%20Check.py)                             | 🟢         | Strings              | 
 | [Caesar Cipher Encryptor.py](/AlgoExpert/Caesar%20Cipher%20Encryptor.py)          | 🟢         | Strings              | 
-| [Run-Length Encoding](/AlgoExpert/Run-Length%20Encoding.py)                       | 🟢         | Strings             | 
-| [Generate Documuent](/AlgoExpert/Generate%20Document.py)                          | 🟢         | Strings             | 
-| [First Non-Repeating Character](/AlgoExpert/First%20Non-Repeating%20Character.py) | 🟢         | Strings             | 
+| [Run-Length Encoding](/AlgoExpert/Run-Length%20Encoding.py)                       | 🟢         | Strings              | 
+| [Generate Documuent](/AlgoExpert/Generate%20Document.py)                          | 🟢         | Strings              | 
+| [First Non-Repeating Character](/AlgoExpert/First%20Non-Repeating%20Character.py) | 🟢         | Strings              | 
 
 
 
