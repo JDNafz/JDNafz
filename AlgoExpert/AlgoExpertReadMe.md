@@ -26,7 +26,9 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Bubble Sort](/AlgoExpert/Bubble%20Sort.py)                                       | 🟢         | Sorting Alorithm     | 
 | [Insertion Sort](/AlgoExpert/Insertion%20Sort.py)                                 | 🟢         | Sorting Alorithm     | 
 | [Selection Sort](/AlgoExpert/Selection%20Sort.py)                                 | 🟢         | Sorting Alorithm     | 
-| []()                         | 🟢         | Arrays               | 
+| [Palindrome Check](/AlgoExpert/Palindrome%20Check.py)                             | 🟢         | Strings              | 
+| [Caesar Cipher Encryptor.py](/AlgoExpert/Caesar%20Cipher%20Encryptor.py)          | 🟢         | Strings              | 
+| []()                         | 🟢         | Strings             | 
 
 🟢 Easy
 🔵 Medium
