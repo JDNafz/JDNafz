@@ -23,9 +23,9 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Tandem Bicycle](/AlgoExpert/Tandem%20Bicycle.py)                                 | 🟢         | Greedy Algorithms    | 
 | [Product Sum](/AlgoExpert/Product%20Sum.py)                                       | 🟢         | Arrays               | 
 | [Find Three Largest Numbers](/AlgoExpert/Find%20Three%20Largest%20Numbers.py)     | 🟢         | Arrays               | 
-| [Bubble Sort](/AlgoExpert/Bubble%20Sort.py)                                       | 🟢         | Arrays               | 
-| [Insertion Sort](/AlgoExpert/Insertion%20Sort.py)                                 | 🟢         | Arrays               | 
-| [Selection Sort](/AlgoExpert/Selection%20Sort.py)                                 | 🟢         | Arrays               | 
+| [Bubble Sort](/AlgoExpert/Bubble%20Sort.py)                                       | 🟢         | Sorting Alorithm     | 
+| [Insertion Sort](/AlgoExpert/Insertion%20Sort.py)                                 | 🟢         | Sorting Alorithm     | 
+| [Selection Sort](/AlgoExpert/Selection%20Sort.py)                                 | 🟢         | Sorting Alorithm     | 
 | []()                         | 🟢         | Arrays               | 
 
 🟢 Easy
