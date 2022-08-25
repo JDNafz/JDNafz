@@ -8,6 +8,8 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Smallest Difference](/AlgoExpert/Smallest%20Difference.py)                       | 🔵         | Arrays               |   
 | [BST Construction](/AlgoExpert/BST%20Construction.py)                             | 🔵         | Binary Search Trees  |   
 | [Max Subset Sum No Adjacent](/AlgoExpert/Max%20Subset%20Sum%20No%20Adjacent.py)   | 🔵         | Dynamic Programming  |   
+| []()                         | 🔵         |           | 
+| []()                         | 🔵         |           | 
 | [Two Number Sum](/AlgoExpert/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Sorted Squared Array](/AlgoExpert/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
@@ -30,7 +32,9 @@ A few of my solutions to coding interview questions on [AlgoExpert](https://www.
 | [Caesar Cipher Encryptor.py](/AlgoExpert/Caesar%20Cipher%20Encryptor.py)          | 🟢         | Strings              | 
 | [Run-Length Encoding](/AlgoExpert/Run-Length%20Encoding.py)                       | 🟢         | Strings             | 
 | [Generate Documuent](/AlgoExpert/Generate%20Document.py)                          | 🟢         | Strings             | 
-| []()                         | 🟢         | Strings             | 
+| [First Non-Repeating Character](/AlgoExpert/First%20Non-Repeating%20Character.py) | 🟢         | Strings             | 
+
+
 
 🟢 Easy
 🔵 Medium
