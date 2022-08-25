@@ -1,7 +1,7 @@
-A few of my solutions to coding interview questions on [AlgoExpert](https://www.algoexpert.io)
+A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
 ## Questions
-[www.AlgoExpert.io](https://www.algoexpert.io/)
+
 
 🟢 Easy
 🔵 Medium
