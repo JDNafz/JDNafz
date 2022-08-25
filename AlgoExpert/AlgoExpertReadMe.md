@@ -1,7 +1,7 @@
 A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
 ## Questions
-#### [Jump to Easy Problems] (https://github.com/JDNafz/JDNafz/blob/main/AlgoExpert/AlgoExpertReadMe.md#25/25%20Easy%20Problems%20Complete)
+[Jump to Easy Problems] (https://github.com/JDNafz/JDNafz/blob/main/AlgoExpert/AlgoExpertReadMe.md#25/25%20Easy%20Problems%20Complete)
 
 🟢 Easy
 🔵 Medium
