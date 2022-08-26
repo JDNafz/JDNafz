@@ -15,7 +15,8 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Max Subset Sum No Adjacent](/AlgoExpert/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |   
 | [Three Number Sum](/AlgoExpert/Three%20Number%20Sum.py)                                           | 🔵         | Arrays               | 
 | [Move Element to End](/AlgoExpert/Move%20Element%20To%20End.py)                                   | 🔵         | Arrays               | 
-| []()                         |          |           | 
+| [Monotonic Array](/AlgoExpert/Monotonic%20Array.py)                                               | 🔵         | Arrays               | 
+| []()                         |          |                | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
 | [Sorted Squared Array](/AlgoExpert/Easy%20Problems/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   
