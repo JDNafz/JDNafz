@@ -3,8 +3,9 @@
 ### My name is JD!
 
 I'm a dancer, human, and aspiring software engineer. I've been working this past year 
-on developing my skills. I currently focus on problem solving in python. I like to 
-work through problems on [Open.Kattis](/Open%20Kattis/) and study algorithms on [AlgoExpert](/AlgoExpert/)
+on developing my skills. I currently focus on problem solving in python. I've been working 
+towards a certification from [AlgoExpert](/AlgoExpert/AlgoExpertReadMe.md) and like to 
+take breaks and try coding challenges on I like to work through problems on [Open.Kattis](/Open%20Kattis/)
 
 ## Check out my Code                👇
 ### My most recent project on Kattis called [Chess](/Open%20Kattis/Chess.py).
