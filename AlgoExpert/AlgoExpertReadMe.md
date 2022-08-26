@@ -13,6 +13,7 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Smallest Difference](/AlgoExpert/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
 | [BST Construction](/AlgoExpert/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
 | [Max Subset Sum No Adjacent](/AlgoExpert/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |   
+| [Three Number Sum](/AlgoExpert/Three%20Number%20Sum.py)                                           | 🔵         |           | 
 | []()                         |          |           | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
