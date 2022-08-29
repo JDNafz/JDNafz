@@ -2,7 +2,7 @@
 Find the longest peak in an array. Peak distance is 
 set by continual decrease in both directions from the peak.
 
-
+🔵 Medium Difficulty
 
 https://www.algoexpert.io/questions/longest-peak
 '''
