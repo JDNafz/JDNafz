@@ -1,4 +1,11 @@
+'''
+Find the longest peak in an array. Peak distance is 
+set by continual decrease in both directions from the peak.
 
+
+
+https://www.algoexpert.io/questions/longest-peak
+'''
 def longestPeak(array):
     # Write your code here.
     peak = 0
@@ -6,20 +13,8 @@ def longestPeak(array):
         if array[i-1] < array[i] > array[i+1]:
             # print("peak found, min array is {},{},{}".format(array[i-1],array[i], array[i+1]))
             peak = max(findPeakDistance(array,i),peak)
-
-        if array[i] < array[i + 1]:
-            # print("{} < {}".format(array[i],array[i+1]))
-            pass
-        elif array[i] > array[i +1]:
-            pass
-            # print("{} >{}".format(array[i], array[i+1]))
-        else:
-            pass
-            # print("{} == {}".format(array[i],array[i+1]))
-    # print("DONE:",peak)
-    # print(peak)
+    print(peak)
     return peak
-
 
 def findPeakDistance(array, idx):
     length = 1
@@ -44,8 +39,6 @@ def findPeakDistance(array, idx):
  
     # print("length:",length)
     return length
-
-
 
 
 
