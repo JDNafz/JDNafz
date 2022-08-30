@@ -18,6 +18,7 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Monotonic Array](/AlgoExpert/Monotonic%20Array.py)                                               | 🔵         | Arrays               | 
 | [Spiral Traverse](/AlgoExpert/Spiral%20Traverse.py)                                               | 🔵         | Arrays               | 
 | [Longest Peak](/AlgoExpert/Longest%20Peak.py)                                                     | 🔵         | Arrays               | 
+| [Array of Products](/AlgoExpert/Array%20Of%20Products.py )                                        | 🔵         | Arrays               | 
 | []()                         |          |                | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
