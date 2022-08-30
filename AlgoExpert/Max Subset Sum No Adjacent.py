@@ -8,18 +8,11 @@ https://www.algoexpert.io/questions/max-subset-sum-no-adjacent
 '''
 
 
-
 def maxSubsetSumNoAdjacent(array):
-    # Write your code here.
     currentMax, previousMax = 0, 0
     for number in array:
         previousMax, currentMax = currentMax, max(currentMax, previousMax + number)
     return currentMax
-
-
-
-
-
 
 #start to conceptualize by thinking of a new array of max values
 
