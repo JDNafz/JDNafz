@@ -3,6 +3,5 @@ def mergeOverlappingIntervals(intervals):
 
     testy
 
-
-
+avdf s
     return [[]]
