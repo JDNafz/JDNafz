@@ -4,4 +4,4 @@ def mergeOverlappingIntervals(intervals):
     testy
 
 avdf s
-    return [[]]
+    return [[]]a 
