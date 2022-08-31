@@ -1,7 +1,6 @@
 def mergeOverlappingIntervals(intervals):
     # Write your code here.
 
-    testy
+    pass 
 
-avdf s
-    return [[]]a 
+    return [[]]
