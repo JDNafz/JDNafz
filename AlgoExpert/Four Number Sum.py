@@ -14,8 +14,8 @@ def fourNumberSum(array, targetSum):
                 sumDict[sum] = [[i,j]]
     print(sumDict)
     for key in sumDict:
-        
 
+        pass
 
 
 
