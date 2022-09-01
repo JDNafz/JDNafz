@@ -19,10 +19,10 @@ def longestPeak(array):
             inc = True
             incNum += 1
             i += 1
+        else:
+            inc = False
         while inc == True and i < len(array)-1:
             print(array[i], inc)
-
-
 
             if array[i] < array[i+1]:
                 print("inc")
@@ -32,8 +32,6 @@ def longestPeak(array):
                     labelPeak(peak, firsthalf, decNum)                
                 i += 1
                 dec = False
-
-
 
             elif array[i] > array[i+1]:
                 print("dec")
@@ -45,7 +43,6 @@ def longestPeak(array):
                     inc = False
                 i += 1
 
-
             else:
                 print("same")
                 incNum = 0
@@ -56,8 +53,6 @@ def longestPeak(array):
                 i += 1
                 inc = False
                 dec = False
-
-
 
         while dec == True and i < len(array)-1:
             print(array[i], inc)
@@ -89,7 +84,6 @@ def longestPeak(array):
                 inc = False
                 dec = False
 
-
     print("DONE:",longest)
     print("peak:",peak)
     return longest
@@ -97,9 +91,7 @@ def longestPeak(array):
 def labelPeak(peak, firsthalf, decNum):
     longest = max(peak,firsthalf + decNum)
     peak = firsthalf + decNum
-
-            
-           
+    return longest
 
 
 longestPeak([1, 2, 3, 3, 4, 0, 10, 6, 5, -1, -3, 2, 3])
