@@ -1,6 +1,6 @@
 def fourNumberSum(array, targetSum):
     sumDict = {}
-
+    ret = []
     for i in range(len(array)):
         print("INDEX:",array[i])
         print("j loop range:", range(i+1,len(array)))
@@ -12,16 +12,12 @@ def fourNumberSum(array, targetSum):
                 sumDict[sum].append([i,j])
             else:
                 sumDict[sum] = [[i,j]]
-    print(sumDict)
-    for key in sumDict:
+            currentMissingSum = targetSum - (array[i] + array[j])
+            if currentMissingSum in sumDict:
+                pass
+    print(ret)
+    return ret
 
-        pass
-
-
-
-        # print("k loop range:", range(0,i))
-        # for k in range(0,i):
-        #     print("k:{}".format(array[k]))
 
 
 fourNumberSum([7, 6, 4, -1, 1, 2],16)
