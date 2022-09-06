@@ -21,6 +21,7 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Array of Products](/AlgoExpert/Array%20Of%20Products.py )                                        | 🔵         | Arrays               | 
 | [First Duplicate Value](/AlgoExpert/First%20Duplicate%20Value.py)                                 | 🔵         | Arrays               | 
 | [Validate BST](/AlgoExpert/Validate%20BST.py)                                                     | 🔵         | BST                  | 
+| [Merge Overlapping Intervals](/AlgoExpert/Merge%20Overlapping%20Intervals.py)                     | 🔵         | Arrays               | 
 | []()                         |          |                | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
