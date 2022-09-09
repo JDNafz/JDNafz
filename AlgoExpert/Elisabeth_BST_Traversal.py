@@ -20,27 +20,26 @@ def insert(root,newValue):
     return root
 
 def inOrderTraverse(tree, array):
-    if tree is None:
-        return array
-    inOrderTraverse(tree.left, array)
-    array.append(tree.value)
-    inOrderTraverse(tree.right, array)
+    if tree is not None:  
+        inOrderTraverse(tree.left, array)
+        array.append(tree.value)
+        inOrderTraverse(tree.right, array)
+    return array
     
 
 def preOrderTraverse(tree, array):
-    if tree is None:
-        return array
-    print(array)
-    array.append(tree.value)
-    array = preOrderTraverse(tree.left, array)
-    array = preOrderTraverse(tree.right, array)
+    if tree is not None:
+        array.append(tree.value)
+        preOrderTraverse(tree.left, array)
+        preOrderTraverse(tree.right, array)
+    return array
 
 def postOrderTraverse(tree, array):
-    if tree is None:
-        return array
-    postOrderTraverse(tree.left, array)
-    postOrderTraverse(tree.right, array)
-    array.append(tree.value)
+    if tree is not None:
+        postOrderTraverse(tree.left, array)
+        postOrderTraverse(tree.right, array)
+        array.append(tree.value)
+    return array
 
 root= insert(None,15)
 insert(root,10)
@@ -50,5 +49,7 @@ insert(root,14)
 insert(root,20)
 insert(root,60)
 print("Printing values of binary tree in preorder Traversal.")
-print(preOrderTraverse(root,[]))
+print("PRE",preOrderTraverse(root,[]))
+print("POST",postOrderTraverse(root,[]))
+print("IN",inOrderTraverse(root,[]))
 
