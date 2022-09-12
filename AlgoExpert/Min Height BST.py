@@ -1,5 +1,15 @@
 
 '''
+construct a BST, with the shortest possible depth, from a sorted array
+
+🔵 Medium
+https://www.algoexpert.io/questions/min-height-bst
+
+
+
+
+
+
 O(nlog(n)) time | O(n) space
 nlog(n) because of the use of the insert method being called on the root every time
 
@@ -20,16 +30,9 @@ def buildMinHeightBst(array, bst, start, end):
     return bst
 
 '''
-from pprint import pprint
-
-
 
 def minHeightBst(array):
-    bst = buildMinHeightBst(array, 0, len(array)-1)
-    print(bst.value)
-    attributes = vars(bst)
-    pprint(attributes)
-    return bst
+    return buildMinHeightBst(array, 0, len(array)-1)
 
 
 def buildMinHeightBst(array, start, end):    
