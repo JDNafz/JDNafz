@@ -1,6 +1,9 @@
 '''
 Write three functions to output an array that has the BST nodes sorted "in order" "
 
+
+🔵 Medium
+https://www.algoexpert.io/questions/bst-traversal
 '''
 def inOrderTraverse(tree, array):
     if tree.left is not None:
