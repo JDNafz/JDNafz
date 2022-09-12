@@ -20,12 +20,19 @@ def buildMinHeightBst(array, bst, start, end):
     return bst
 
 '''
+from pprint import pprint
+
+
 
 def minHeightBst(array):
-    return buildMinHeightBst(array, 0, len(array)-1)
+    bst = buildMinHeightBst(array, 0, len(array)-1)
+    print(bst.value)
+    attributes = vars(bst)
+    pprint(attributes)
+    return bst
 
 
-def buildMinHeightBst(array, bst, start, end):    
+def buildMinHeightBst(array, start, end):    
     if start > end:
         return
     mid = (start + end) // 2
@@ -53,3 +60,7 @@ class BST:
                 self.right = BST(value)
             else:
                 self.right.insert(value)
+
+
+array = [1, 2, 5, 7, 10, 13, 14, 15, 22]
+minHeightBst(array)
