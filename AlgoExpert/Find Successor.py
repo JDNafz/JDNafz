@@ -1,6 +1,3 @@
-# This is an input class. Do not edit.
-from sqlite3 import complete_statement
-
 
 class BinaryTree:
     def __init__(self, value, left=None, right=None, parent=None):
