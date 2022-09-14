@@ -26,7 +26,7 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Min Height BST](/AlgoExpert/Min%20Height%20BST.py)                                               | 🔵         | BST                  | 
 | [Find Kth Largest Value in BST](/AlgoExpert/Find%20Kth%20Largest%20Value%20in%20BST.py)           | 🔵         | BST                  | 
 | [Reconstruct BST](/AlgoExpert/Reconstruct%20BST.py)                                               | 🔵         | BST                  | 
-| []()                         | 🔵       |                | 
+| [Invert Binary Tree](/AlgoExpert/Invert%20Binary%20Tree.py)                                       | 🔵         | BT                   | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
 | [Sorted Squared Array](/AlgoExpert/Easy%20Problems/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   
