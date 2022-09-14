@@ -20,13 +20,15 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Longest Peak](/AlgoExpert/Longest%20Peak.py)                                                     | 🔵         | Arrays               | 
 | [Array of Products](/AlgoExpert/Array%20Of%20Products.py )                                        | 🔵         | Arrays               | 
 | [First Duplicate Value](/AlgoExpert/First%20Duplicate%20Value.py)                                 | 🔵         | Arrays               | 
-| [Validate BST](/AlgoExpert/Validate%20BST.py)                                                     | 🔵         | BST                  | 
+| [Validate BST](/AlgoExpert/Validate%20BST.py)                                                     | 🔵         | Binary Search Trees  | 
 | [Merge Overlapping Intervals](/AlgoExpert/Merge%20Overlapping%20Intervals.py)                     | 🔵         | Arrays               | 
 | [BST Traversal](/AlgoExpert/BST%20Traversal.py)                                                   | 🔵         | BST                  | 
 | [Min Height BST](/AlgoExpert/Min%20Height%20BST.py)                                               | 🔵         | BST                  | 
 | [Find Kth Largest Value in BST](/AlgoExpert/Find%20Kth%20Largest%20Value%20in%20BST.py)           | 🔵         | BST                  | 
 | [Reconstruct BST](/AlgoExpert/Reconstruct%20BST.py)                                               | 🔵         | BST                  | 
 | [Invert Binary Tree](/AlgoExpert/Invert%20Binary%20Tree.py)                                       | 🔵         | BT                   | 
+| [Binary Tree Diameter](/AlgoExpert/Binary%20Tree%20Diameter.py)                                   | 🔵         | Binary Trees         | 
+| []()                         | 🔵       |                | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
 | [Sorted Squared Array](/AlgoExpert/Easy%20Problems/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   
