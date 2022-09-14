@@ -6,22 +6,27 @@ class BinaryTree:
         self.right = right
         self.parent = parent
 
-
 def findSuccessor(tree, node):
-    global complete 
-    complete = False
-    return inOrderTraverse(tree,node)
+    if node.left is not None:
+        return leftMostChild(node.left)
 
-
-def inOrderTraverse(tree, node):
-    global complete
-    if complete == True or tree is None:
+def leftMostChild(tree):
+    if tree.left is None:
         return
-    if tree.left is not None:
-        inOrderTraverse(tree.left,node)
-    # CURR TREE array.append(tree.value)
-    if tree.right is not None:
-        inOrderTraverse(tree.right,node)
-    
-    if tree.value == node
-    return array
+    leftMostChild(tree.left)
+    print(tree.value)
+    return tree
+
+
+
+
+# node1 = BinaryTree(1,2,3,None)
+# node2 = BinaryTree(2,4,5,1)
+# node4 = BinaryTree(4,8,9,2)
+# node8 = BinaryTree(8,None,None,4)
+# node9 = BinaryTree(9,None,None,4)
+# node5 = BinaryTree(5,None,None,2)
+# node3 = BinaryTree(3,6,7,1)
+# node6 = BinaryTree(6,None,None,3)
+# node7 = BinaryTree(7,None,None,3)
+
