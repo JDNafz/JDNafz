@@ -1,4 +1,8 @@
-
+'''
+Find the next item following a specific node in a BT assuming it is being sorted using inOrder Traversal
+🔵 Medium
+https://www.algoexpert.io/questions/find-successor
+'''
 class BinaryTree:
     def __init__(self, value, left=None, right=None, parent=None):
         self.value = value
@@ -7,26 +11,19 @@ class BinaryTree:
         self.parent = parent
 
 def findSuccessor(tree, node):
-    if node.left is not None:
-        return leftMostChild(node.left)
+    if node.right is not None:
+        return leftMostChild(node.right)
+    return rightMostParent(node)
 
-def leftMostChild(tree):
-    if tree.left is None:
-        return
-    leftMostChild(tree.left)
-    print(tree.value)
-    return tree
+    
+def leftMostChild(node):
+    currentNode = node
+    while currentNode.left is not None:
+        currentNode = currentNode.left
+    return currentNode
 
-
-
-
-# node1 = BinaryTree(1,2,3,None)
-# node2 = BinaryTree(2,4,5,1)
-# node4 = BinaryTree(4,8,9,2)
-# node8 = BinaryTree(8,None,None,4)
-# node9 = BinaryTree(9,None,None,4)
-# node5 = BinaryTree(5,None,None,2)
-# node3 = BinaryTree(3,6,7,1)
-# node6 = BinaryTree(6,None,None,3)
-# node7 = BinaryTree(7,None,None,3)
-
+def rightMostParent(node):
+    currentNode = node
+    while currentNode.parent is not None and currentNode.parent.right == currentNode:
+        currentNode = currentNode.parent
+    return currentNode.parent

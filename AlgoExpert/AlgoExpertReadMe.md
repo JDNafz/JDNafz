@@ -22,13 +22,13 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [First Duplicate Value](/AlgoExpert/First%20Duplicate%20Value.py)                                 | 🔵         | Arrays               | 
 | [Validate BST](/AlgoExpert/Validate%20BST.py)                                                     | 🔵         | Binary Search Trees  | 
 | [Merge Overlapping Intervals](/AlgoExpert/Merge%20Overlapping%20Intervals.py)                     | 🔵         | Arrays               | 
-| [BST Traversal](/AlgoExpert/BST%20Traversal.py)                                                   | 🔵         | BST                  | 
-| [Min Height BST](/AlgoExpert/Min%20Height%20BST.py)                                               | 🔵         | BST                  | 
-| [Find Kth Largest Value in BST](/AlgoExpert/Find%20Kth%20Largest%20Value%20in%20BST.py)           | 🔵         | BST                  | 
-| [Reconstruct BST](/AlgoExpert/Reconstruct%20BST.py)                                               | 🔵         | BST                  | 
-| [Invert Binary Tree](/AlgoExpert/Invert%20Binary%20Tree.py)                                       | 🔵         | BT                   | 
+| [BST Traversal](/AlgoExpert/BST%20Traversal.py)                                                   | 🔵         | Binary Search Trees  | 
+| [Min Height BST](/AlgoExpert/Min%20Height%20BST.py)                                               | 🔵         | Binary Search Trees  | 
+| [Find Kth Largest Value in BST](/AlgoExpert/Find%20Kth%20Largest%20Value%20in%20BST.py)           | 🔵         | Binary Search Trees  | 
+| [Reconstruct BST](/AlgoExpert/Reconstruct%20BST.py)                                               | 🔵         | Binary Search Trees  | 
+| [Invert Binary Tree](/AlgoExpert/Invert%20Binary%20Tree.py)                                       | 🔵         | Binary Trees         | 
 | [Binary Tree Diameter](/AlgoExpert/Binary%20Tree%20Diameter.py)                                   | 🔵         | Binary Trees         | 
-| []()                         | 🔵       |                | 
+| [Find Successor](/AlgoExpert/Find%20Successor.py)                                                 | 🔵         | Binary Trees         | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
 | [Sorted Squared Array](/AlgoExpert/Easy%20Problems/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   
