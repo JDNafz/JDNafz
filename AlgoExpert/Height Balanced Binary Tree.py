@@ -4,16 +4,23 @@ class BinaryTree:
         self.left = left
         self.right = right
 
+class InfoTracker:
+    def __init__(self,isBalanced,height):
+        self.isBalanced = isBalanced
+        self.height = height
 
 def heightBalancedBinaryTree(tree):
-    difference = abs(heightCheck(tree.left,0) - heightCheck(tree.right,0))
-    if difference == 1 or difference == 0:
-        return True
-    return False
+    result = balancedHelper(tree)
+    return result.isBalanced
 
-def heightCheck(node,height):
+def balancedHelper(node):
     if node is None:
-        return
-    heightCheck(node.left)
-    heightCheck(node.right)
+        return InfoTracker(True, -1)
+    
+    left = balancedHelper(node.left)
+    right = balancedHelper(node.right)
 
+    isBalanced = (  left.isBalanced and right.isBalanced and abs(left.height - right.height) <=1    )
+
+    height = max(left.height,right.height) + 1
+    return InfoTracker(isBalanced, height)
