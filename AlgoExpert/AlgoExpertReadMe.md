@@ -30,6 +30,7 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Binary Tree Diameter](/AlgoExpert/Binary%20Tree%20Diameter.py)                                   | 🔵         | Binary Trees         | 
 | [Find Successor](/AlgoExpert/Find%20Successor.py)                                                 | 🔵         | Binary Trees         | 
 | [Height Balanced Binary Tree](/AlgoExpert/Height%20Balanced%20Binary%20Tree.py)                   | 🔵         | Binary Trees         | 
+| [Kadane's Algorithm](/AlgoExpert/Kadane's%20Algorithm.py)                                         | 🔵         | Famous Algorithms    | 
 | []()                                                 | 🔵         |         | 
 | []()                                                 | 🔵         |         | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
