@@ -31,6 +31,7 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Find Successor](/AlgoExpert/Find%20Successor.py)                                                 | 🔵         | Binary Trees         | 
 | [Height Balanced Binary Tree](/AlgoExpert/Height%20Balanced%20Binary%20Tree.py)                   | 🔵         | Binary Trees         | 
 | [Kadane's Algorithm](/AlgoExpert/Kadane's%20Algorithm.py)                                         | 🔵         | Famous Algorithms    | 
+| [Min Number of Coins for Change](/AlgoExpert/Min%20Number%20of%20Coins%20for%20Change.py)         | 🔵         | Dynamic Programming  | 
 | []()                                                 | 🔵         |         | 
 | []()                                                 | 🔵         |         | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   

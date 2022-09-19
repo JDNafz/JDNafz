@@ -9,9 +9,10 @@ def minNumberOfCoinsForChange(n, denoms):
     
     for d in denoms:
         #amount represents $ amount in the array from 0-n attempting to build towards
-        for amount in range(len(numCoins)):
-            if d <= amount:
-                numCoins[amount] = min(numCoins[amount], numCoins[amount -d] + 1)
+        for amount in range(d, n+1):
+            numCoins[amount] = min(numCoins[amount], numCoins[amount -d] + 1)
+            # This print statement clearly shows how to loops work.
+            # print("Amount:{}, denomination:{}".format(amount, d), numCoins)
     if numCoins[n] != float("inf"):
         return numCoins[n]
     return -1    
