@@ -12,7 +12,7 @@ def minNumberOfCoinsForChange(n, denoms):
         for amount in range(d, n+1):
             numCoins[amount] = min(numCoins[amount], numCoins[amount -d] + 1)
             # This print statement clearly shows how to loops work.
-            # print("Amount:{}, denomination:{}".format(amount, d), numCoins)
+            print("Amount:{}, denomination:{}".format(amount, d), numCoins)
     if numCoins[n] != float("inf"):
         return numCoins[n]
     return -1    
@@ -22,3 +22,16 @@ def minNumberOfCoinsForChange(n, denoms):
 
 
 minNumberOfCoinsForChange(9, [3,5])
+#print statement:
+# Amount:3, denomination:3 [0, inf, inf, 1, inf, inf, inf, inf, inf, inf]
+# Amount:4, denomination:3 [0, inf, inf, 1, inf, inf, inf, inf, inf, inf]
+# Amount:5, denomination:3 [0, inf, inf, 1, inf, inf, inf, inf, inf, inf]
+# Amount:6, denomination:3 [0, inf, inf, 1, inf, inf, 2, inf, inf, inf]
+# Amount:7, denomination:3 [0, inf, inf, 1, inf, inf, 2, inf, inf, inf]
+# Amount:8, denomination:3 [0, inf, inf, 1, inf, inf, 2, inf, inf, inf]
+# Amount:9, denomination:3 [0, inf, inf, 1, inf, inf, 2, inf, inf, 3]
+# Amount:5, denomination:5 [0, inf, inf, 1, inf, 1, 2, inf, inf, 3]
+# Amount:6, denomination:5 [0, inf, inf, 1, inf, 1, 2, inf, inf, 3]
+# Amount:7, denomination:5 [0, inf, inf, 1, inf, 1, 2, inf, inf, 3]
+# Amount:8, denomination:5 [0, inf, inf, 1, inf, 1, 2, inf, 2, 3]
+# Amount:9, denomination:5 [0, inf, inf, 1, inf, 1, 2, inf, 2, 3]
