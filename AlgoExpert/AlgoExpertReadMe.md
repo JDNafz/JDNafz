@@ -33,6 +33,7 @@ A few of my solutions to coding interview questions on [AlgoExpert.io](https://w
 | [Kadane's Algorithm](/AlgoExpert/Kadane's%20Algorithm.py)                                         | 🔵         | Famous Algorithms    | 
 | [Min Number of Coins for Change](/AlgoExpert/Min%20Number%20of%20Coins%20for%20Change.py)         | 🔵         | Dynamic Programming  | 
 | [Single Cycle Check](/AlgoExpert/Single%20Cycle%20Check.py)                                       | 🔵         | Graphs               | 
+| [Breadth-first Search](/AlgoExpert/Breadth-first%20Search.py)                                     | 🔵         | Graphs               | 
 | []()                                                 | 🔵         |         | 
 | []()                                                 | 🔵         |         | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
