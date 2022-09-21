@@ -1,57 +1,88 @@
 def riverSizes(matrix):
+    global currRiver 
+    currRiver = 0
     results = []
     for row in range(len(matrix)):
+        # print("row#{}, rowVal:{}, \n{}\n".format(row,matrix[row],results))
         for col in range(len(matrix[0])):
+            current_location = matrix[row][col]
             if matrix[row][col] == 1:
-                currRiver = 0
+                currRiver = 1
+                matrix[row][col] = -1
                 findRiver(row,col,matrix,results,currRiver)
     print(results)
+    sum = 0
+    for i in results:
+        sum+=i
+    print(sum)
     return results
 
 def findRiver(row,col,matrix,results,currRiver):
-    matrix[row][col] = -1
-    currRiver +=1
-    if checkRight(row,col,matrix):
-        if matrix[row][col+1] == 1:
-            findRiver(row,col+1,matrix,results,currRiver)
-    if checkLeft(row,col,matrix):
-        if matrix[row][col-1] == 1:
-            findRiver(row,col-1,matrix,results,currRiver)
-    if checkDown(row,col,matrix):
-        if matrix[row+1][col] == 1:
-            findRiver(row+1,col,matrix,results,currRiver)
-    if checkUp(row,col,matrix):
-        if matrix[row-1][col] ==1:
-            findRiver (row-1,col,matrix,results,currRiver)
-    results.append(currRiver)
+    if checkRight(row,col,matrix,results,currRiver):
+        findRiver(row,col,matrix,results,currRiver)
+    elif checkDown(row,col,matrix,results,currRiver):
+        findRiver(row,col,matrix,results,currRiver)
+    elif checkLeft(row,col,matrix,results,currRiver):
+        findRiver(row,col,matrix,results,currRiver)
+    elif checkUp(row,col,matrix,results,currRiver):
+        findRiver(row,col,matrix,results,currRiver)
+    else:
+        results.append(currRiver)
+
+    for i in range(len(matrix)):
+        print(matrix[i])
+    print(results)
+    print("\n")
     return
 
-def checkRight(row,col,matrix):
-    if col != matrix[row][-1]:
+def checkRight(row,col,matrix,results,currRiver):
+    if col < len(matrix[row]) - 1:
+        if checkit(row,col+1,matrix,currRiver):
+            return True
+    return False
+
+def checkLeft(row,col,matrix,results,currRiver):
+    if col != 0:
+        if checkit(row,col-1,matrix,currRiver):
+            return True
+    return False
+
+def checkDown(row,col,matrix,results,currRiver):
+    if row < len(matrix)-1:
+        if checkit(row+1,col,matrix,currRiver):
+            return True
+    return False
+
+def checkUp(row,col,matrix,results,currRiver):
+    if row != 0:
+        if checkit(row-1,col,matrix,currRiver):
+            return True
+    return False
+
+
+def checkit(row,col,matrix,currRiver):
+    if matrix[row][col] == 1:
+        matrix[row][col] = -1
+        currRiver += 1
+        print(currRiver)
         return True
     return False
-def checkLeft(row,col,matrix):
-    if col != matrix[row][0]:
-        return True
-    return False
-def checkDown(row,col,matrix):
-    if row != matrix[-1]:
-        return True
-    return False
-def checkUp(row,col,matrix):
-    if row != matrix[0]:
-        return True
-    return False
+
+# riverSizes([
+#   [1, 0, 0, 1, 0],
+#   [1, 0, 1, 0, 0],
+#   [0, 0, 1, 0, 1],
+#   [1, 0, 1, 0, 1],
+#   [1, 0, 1, 1, 0]
+# ])
 
 riverSizes([
-  [1, 0, 0, 1, 0],
-  [1, 0, 1, 0, 0],
-  [0, 0, 1, 0, 1],
-  [1, 0, 1, 0, 1],
-  [1, 0, 1, 1, 0]
+  [1, 0, 0, 0, 0],
+  [0, 1, 0, 0, 0],
+  [0, 1, 0, 1, 0],
+  [1, 0, 0, 1, 1],
+  [1, 1, 1, 0, 0]
 ])
-
-
 
 # def searchRiver(row,col,matrix,array,riverLength):
 #     riverLength += 1
