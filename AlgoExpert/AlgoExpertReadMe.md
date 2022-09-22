@@ -1,5 +1,7 @@
 A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
+I am offically half way to a certificate from AlgoExpert! 51/100 completed towards certificate!
+
 ## Questions
 
 
