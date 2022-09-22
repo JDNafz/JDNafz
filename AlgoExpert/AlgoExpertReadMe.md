@@ -37,6 +37,7 @@ I am offically half way to a certificate from AlgoExpert! 51/100 completed towar
 | [Single Cycle Check](/AlgoExpert/Single%20Cycle%20Check.py)                                       | 🔵         | Graphs               | 
 | [Breadth-first Search](/AlgoExpert/Breadth-first%20Search.py)                                     | 🔵         | Graphs               | 
 | [River Sizes](/AlgoExpert/River%20Sizes.py)                                                       | 🔵         | Graphs               | 
+| [Youngest Common Ancestor](/AlgoExpert/Youngest%20Common%20Ancestor.py)                           | 🔵         | Graphs               | 
 | []()                                                 | 🔵         |         | 
 | []()                                                 | 🔵         |         | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
