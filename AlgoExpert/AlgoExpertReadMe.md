@@ -40,6 +40,7 @@ I am offically half way to a certificate from AlgoExpert! 54/100 completed towar
 | [Youngest Common Ancestor](/AlgoExpert/Youngest%20Common%20Ancestor.py)                           | 🔵         | Graphs               | 
 | [Remove Islands](/AlgoExpert/Remove%20Islands.py)                                                 | 🔵         | Graphs               | 
 | [Cycle In Graph](/AlgoExpert/Cycle%20In%20Graph.py)                                               | 🔵         | Graphs               | 
+| [Minimum Passes Of Matrix](/AlgoExpert/Minimum%20Passes%20Of%20Matrix.py)                         | 🔵         | Graphs               | 
 | []()                                                 | 🔵         |         | 
 | []()                                                 | 🔵         |         | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
