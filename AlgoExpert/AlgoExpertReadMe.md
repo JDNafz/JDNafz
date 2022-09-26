@@ -1,6 +1,6 @@
 A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
-I am offically half way to a certificate from AlgoExpert! 54/100 completed towards certificate!
+I am offically half way to a certificate from AlgoExpert! 56/100 completed towards certificate!
 
 ## Questions
 
@@ -42,6 +42,7 @@ I am offically half way to a certificate from AlgoExpert! 54/100 completed towar
 | [Cycle In Graph](/AlgoExpert/Cycle%20In%20Graph.py)                                               | 🔵         | Graphs               | 
 | [Minimum Passes Of Matrix](/AlgoExpert/Minimum%20Passes%20Of%20Matrix.py)                         | 🔵         | Graphs               | 
 | [Task Assignment](/AlgoExpert/Task%20Assignment.py)                                               | 🔵         | Greedy Algorithms    | 
+| [Valid Starting City](/AlgoExpert/Valid%20Starting%20City.py)                                     | 🔵         | Greedy Algorithms    | 
 | []()                                                 | 🔵         |         | 
 | []()                                                 | 🔵         |         | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
