@@ -12,39 +12,39 @@ I am offically half way to a certificate from AlgoExpert! 56/100 completed towar
 
 | Question                                                                                          | Difficulty | Category             |           
 | ------------------------------------------------------------------------------------------------- | ---------- | -------------------- | 
-| [Smallest Difference](/AlgoExpert/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
-| [BST Construction](/AlgoExpert/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
-| [Max Subset Sum No Adjacent](/AlgoExpert/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |   
-| [Three Number Sum](/AlgoExpert/Three%20Number%20Sum.py)                                           | 🔵         | Arrays               | 
-| [Move Element to End](/AlgoExpert/Move%20Element%20To%20End.py)                                   | 🔵         | Arrays               | 
-| [Monotonic Array](/AlgoExpert/Monotonic%20Array.py)                                               | 🔵         | Arrays               | 
-| [Spiral Traverse](/AlgoExpert/Spiral%20Traverse.py)                                               | 🔵         | Arrays               | 
-| [Longest Peak](/AlgoExpert/Longest%20Peak.py)                                                     | 🔵         | Arrays               | 
-| [Array of Products](/AlgoExpert/Array%20Of%20Products.py )                                        | 🔵         | Arrays               | 
-| [First Duplicate Value](/AlgoExpert/First%20Duplicate%20Value.py)                                 | 🔵         | Arrays               | 
-| [Validate BST](/AlgoExpert/Validate%20BST.py)                                                     | 🔵         | Binary Search Trees  | 
-| [Merge Overlapping Intervals](/AlgoExpert/Merge%20Overlapping%20Intervals.py)                     | 🔵         | Arrays               | 
-| [BST Traversal](/AlgoExpert/BST%20Traversal.py)                                                   | 🔵         | Binary Search Trees  | 
-| [Min Height BST](/AlgoExpert/Min%20Height%20BST.py)                                               | 🔵         | Binary Search Trees  | 
-| [Find Kth Largest Value in BST](/AlgoExpert/Find%20Kth%20Largest%20Value%20in%20BST.py)           | 🔵         | Binary Search Trees  | 
-| [Reconstruct BST](/AlgoExpert/Reconstruct%20BST.py)                                               | 🔵         | Binary Search Trees  | 
-| [Invert Binary Tree](/AlgoExpert/Invert%20Binary%20Tree.py)                                       | 🔵         | Binary Trees         | 
-| [Binary Tree Diameter](/AlgoExpert/Binary%20Tree%20Diameter.py)                                   | 🔵         | Binary Trees         | 
-| [Find Successor](/AlgoExpert/Find%20Successor.py)                                                 | 🔵         | Binary Trees         | 
-| [Height Balanced Binary Tree](/AlgoExpert/Height%20Balanced%20Binary%20Tree.py)                   | 🔵         | Binary Trees         | 
-| [Kadane's Algorithm](/AlgoExpert/Kadane's%20Algorithm.py)                                         | 🔵         | Famous Algorithms    | 
-| [Min Number of Coins for Change](/AlgoExpert/Min%20Number%20of%20Coins%20for%20Change.py)         | 🔵         | Dynamic Programming  | 
-| [Single Cycle Check](/AlgoExpert/Single%20Cycle%20Check.py)                                       | 🔵         | Graphs               | 
-| [Breadth-first Search](/AlgoExpert/Breadth-first%20Search.py)                                     | 🔵         | Graphs               | 
-| [River Sizes](/AlgoExpert/River%20Sizes.py)                                                       | 🔵         | Graphs               | 
-| [Youngest Common Ancestor](/AlgoExpert/Youngest%20Common%20Ancestor.py)                           | 🔵         | Graphs               | 
-| [Remove Islands](/AlgoExpert/Remove%20Islands.py)                                                 | 🔵         | Graphs               | 
-| [Cycle In Graph](/AlgoExpert/Cycle%20In%20Graph.py)                                               | 🔵         | Graphs               | 
-| [Minimum Passes Of Matrix](/AlgoExpert/Minimum%20Passes%20Of%20Matrix.py)                         | 🔵         | Graphs               | 
-| [Task Assignment](/AlgoExpert/Task%20Assignment.py)                                               | 🔵         | Greedy Algorithms    | 
-| [Valid Starting City](/AlgoExpert/Valid%20Starting%20City.py)                                     | 🔵         | Greedy Algorithms    | 
 | []()                                                 | 🔵         |         | 
 | []()                                                 | 🔵         |         | 
+| [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
+| [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
+| [Max Subset Sum No Adjacent](/AlgoExpert/Medium%20Problems/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |   
+| [Three Number Sum](/AlgoExpert/Medium%20Problems/Three%20Number%20Sum.py)                                           | 🔵         | Arrays               | 
+| [Move Element to End](/AlgoExpert/Medium%20Problems/Move%20Element%20To%20End.py)                                   | 🔵         | Arrays               | 
+| [Monotonic Array](/AlgoExpert/Medium%20Problems/Monotonic%20Array.py)                                               | 🔵         | Arrays               | 
+| [Spiral Traverse](/AlgoExpert/Medium%20Problems/Spiral%20Traverse.py)                                               | 🔵         | Arrays               | 
+| [Longest Peak](/AlgoExpert/Medium%20Problems/Longest%20Peak.py)                                                     | 🔵         | Arrays               | 
+| [Array of Products](/AlgoExpert/Medium%20Problems/Array%20Of%20Products.py )                                        | 🔵         | Arrays               | 
+| [First Duplicate Value](/AlgoExpert/Medium%20Problems/First%20Duplicate%20Value.py)                                 | 🔵         | Arrays               | 
+| [Validate BST](/AlgoExpert/Medium%20Problems/Validate%20BST.py)                                                     | 🔵         | Binary Search Trees  | 
+| [Merge Overlapping Intervals](/AlgoExpert/Medium%20Problems/Merge%20Overlapping%20Intervals.py)                     | 🔵         | Arrays               | 
+| [BST Traversal](/AlgoExpert/Medium%20Problems/BST%20Traversal.py)                                                   | 🔵         | Binary Search Trees  | 
+| [Min Height BST](/AlgoExpert/Medium%20Problems/Min%20Height%20BST.py)                                               | 🔵         | Binary Search Trees  | 
+| [Find Kth Largest Value in BST](/AlgoExpert/Medium%20Problems/Find%20Kth%20Largest%20Value%20in%20BST.py)           | 🔵         | Binary Search Trees  | 
+| [Reconstruct BST](/AlgoExpert/Medium%20Problems/Reconstruct%20BST.py)                                               | 🔵         | Binary Search Trees  | 
+| [Invert Binary Tree](/AlgoExpert/Medium%20Problems/Invert%20Binary%20Tree.py)                                       | 🔵         | Binary Trees         | 
+| [Binary Tree Diameter](/AlgoExpert/Medium%20Problems/Binary%20Tree%20Diameter.py)                                   | 🔵         | Binary Trees         | 
+| [Find Successor](/AlgoExpert/Medium%20Problems/Find%20Successor.py)                                                 | 🔵         | Binary Trees         | 
+| [Height Balanced Binary Tree](/AlgoExpert/Medium%20Problems/Height%20Balanced%20Binary%20Tree.py)                   | 🔵         | Binary Trees         | 
+| [Kadane's Algorithm](/AlgoExpert/Medium%20Problems/Kadane's%20Algorithm.py)                                         | 🔵         | Famous Algorithms    | 
+| [Min Number of Coins for Change](/AlgoExpert/Medium%20Problems/Min%20Number%20of%20Coins%20for%20Change.py)         | 🔵         | Dynamic Programming  | 
+| [Single Cycle Check](/AlgoExpert/Medium%20Problems/Single%20Cycle%20Check.py)                                       | 🔵         | Graphs               | 
+| [Breadth-first Search](/AlgoExpert/Medium%20Problems/Breadth-first%20Search.py)                                     | 🔵         | Graphs               | 
+| [River Sizes](/AlgoExpert/Medium%20Problems/River%20Sizes.py)                                                       | 🔵         | Graphs               | 
+| [Youngest Common Ancestor](/AlgoExpert/Medium%20Problems/Youngest%20Common%20Ancestor.py)                           | 🔵         | Graphs               | 
+| [Remove Islands](/AlgoExpert/Medium%20Problems/Remove%20Islands.py)                                                 | 🔵         | Graphs               | 
+| [Cycle In Graph](/AlgoExpert/Medium%20Problems/Cycle%20In%20Graph.py)                                               | 🔵         | Graphs               | 
+| [Minimum Passes Of Matrix](/AlgoExpert/Medium%20Problems/Minimum%20Passes%20Of%20Matrix.py)                         | 🔵         | Graphs               | 
+| [Task Assignment](/AlgoExpert/Medium%20Problems/Task%20Assignment.py)                                               | 🔵         | Greedy Algorithms    | 
+| [Valid Starting City](/AlgoExpert/Medium%20Problems/Valid%20Starting%20City.py)                                     | 🔵         | Greedy Algorithms    | 
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                               | 🟢         | Arrays               |   
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                     | 🟢         | Arrays               |   
 | [Sorted Squared Array](/AlgoExpert/Easy%20Problems/Sorted%20Squared%20Array.py)                   | 🟢         | Arrays               |   
