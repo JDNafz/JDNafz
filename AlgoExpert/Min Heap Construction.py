@@ -1,80 +1,116 @@
+'''
+Write the definitions for the methods to a MinHeap class 
+- build it from an array of integers
+- insert
+- remove the min value
+- peek at rootvalue
+- sift integers up and down
+*the heap lives in the form of an array at all times. 
+
+🔵 Medium
+https://www.algoexpert.io/questions/min-heap-construction
+'''
+
+
+
+
 # Do not edit the class below except for the buildHeap,
 # siftDown, siftUp, peek, remove, and insert methods.
 # Feel free to add new properties and methods to the class.
 class MinHeap:
-    def __init__(self, array):
+    def __init__(self, array): #constructor
         # Do not edit the line below.
         self.heap = self.buildHeap(array)
-
+        self.lastParent = None
     def buildHeap(self,array):
-        parentNodeList = getParents(array)
-        for i in range(len(array)):
-            heap.siftDown(i,array)
+        self.heap = array
+        x = len(self.heap) - 1
+        print(x)
+        parentIdx = self.getParentIdx(x)
+      
+        self.lastParent = parentIdx
+        for i in range(parentIdx,-1,-1):
+            self.siftDown(i)
+        return self.heap 
 
-    def siftDown(self, currentIdx, array):
-        child1 = getChild1Idx(currentIdx)
-        child2 = getChild2Idx(currentIdx)
-        while array[currentIdx] > array[child1] and value > array[child2]:
-            if array[child1] < array[child2]:
-                array[child1], array[currentIdx] = array[currentIdx], array[child1]
-                currentIdx = child1
+    def siftDown(self, currentIdx):
+
+        child1Idx = self.getChild1Idx(currentIdx)
+        child1 = self.heap[child1Idx]
+
+        child2Idx = self.getChild2Idx(currentIdx)
+        if child2Idx > len(self.heap)-1:
+            child2 = float("inf")
+        else:
+            child2 = self.heap[child2Idx]
+        while self.heap[currentIdx] > child1 or self.heap[currentIdx] > child2:
+            if child1 <= child2:
+                self.heap[child1Idx], self.heap[currentIdx] = self.heap[currentIdx], self.heap[child1Idx]
+                currentIdx = child1Idx
             else:
-                array[child2], array[currentIdx] = array[currentIdx], array[child2]
-                currentIdx = child2
-            child1 = getChild1Idx(currentIdx)
-            child2 = getChild2Idx(currentIdx)
+                self.heap[child2Idx], self.heap[currentIdx] = self.heap[currentIdx], self.heap[child2Idx]
+                currentIdx = child2Idx
+            child1Idx = self.getChild1Idx(currentIdx)
+            if child1Idx > len(self.heap)-1:
+                child1 = float("inf")
+            else:
+                child1 = self.heap[child1Idx]
+            child2Idx = self.getChild2Idx(currentIdx) 
+            if child2Idx > len(self.heap)-1:
+                child2 = float("inf")
+            else:
+                child2 = self.heap[child2Idx]
 
-    def siftUp(self, currentIdx, parentIdx, array):
-        while array[currentIdx] < array[parentIdx]:
-            array[currentIdx], array[parentIdx] = array[parentIdx], array[currentIdx]
+            #print after each run through siftDown
+            # print(self.heap)
+
+    def siftUp(self, currentIdx, parentIdx):
+        while self.heap[currentIdx] < self.heap[parentIdx]:
+            self.heap[currentIdx], self.heap[parentIdx] = self.heap[parentIdx], self.heap[currentIdx]
             currentIdx = parentIdx
-            parentIdx = getParentIdx(parentIdx)
+            parentIdx = self.getParentIdx(parentIdx)
             
-            # 
 
     def peek(self):
-        # Write your code here.
-        pass
+        return self.heap[0]
 
-    def remove(self, array):
-        currentIdx = len(array) - 1
-        array[0], array[currentIdx] = array[currentIdx], array[0]
-        heap.siftDown(0,array)
-        popped = array.pop(currentIdx)
+    def remove(self):
+        currentIdx = len(self.heap) - 1
+        self.heap[0], self.heap[currentIdx] = self.heap[currentIdx], self.heap[0]
+        self.siftDown(0)
+        popped = self.heap.pop(currentIdx)
         return popped
 
-    def insert(self, value, array):
-        currentIdx = len(array)
-        array.append(value)
-        parentValue = getParentValue(currentIdx)
-        parentIdx = getParentIdx(currentIdx)
+    def insert(self, value):
+        currentIdx = len(self.heap)
+        self.heap.append(value)
+        parentValue = self.getParentValue(currentIdx)
+        parentIdx = self.getParentIdx(currentIdx)
         if value < parentValue:
-            heap.siftup(currentIdx, parentIdx, array)
-
-def getParents(array):
-    parentNodes = []
-    lastchild = len(array) - 1
-    parent = getParentIdx(lastChild) 
-    return parentNodes
-
-def getParentIdx(currentIdx):
-    return (currentIdx - 1) // 2
-     
-def getParentValue(currentIdx):
-    parentIdx = getParentIdx(currentIdx)
-    parentValue = array[parentIdx]
-    # print(parentValue, "idx:",parentIdx)
-    return parentValue
-
-def getChild1Idx(currentIdx):
-    return (2 * currentIdx) + 1
-def getChild2Idx(currentIdx):
-    return (2 * currentIdx) + 2
+            self.siftUp(currentIdx, parentIdx)
+    
+    def getParentValue(self, currentIdx):
+        parentIdx = self.getParentIdx(currentIdx)
+        parentValue = self.heap[parentIdx]
+        return parentValue
 
 
-heap = MinHeap([48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41])
-heap.insert(76)
+    def getParentIdx(self, currentIdx):
+        return (currentIdx - 1) // 2
+        
+
+    def getChild1Idx(self, currentIdx):
+        return (2 * currentIdx) + 1
+    def getChild2Idx(self, currentIdx):
+        return (2 * currentIdx) + 2
+
+
+# heapBoi = MinHeap([48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41])
+# heapGurl = MinHeap([100,50,25,10,3,7])
+# print(heapBoi.heap)
+
+# heapBoi.insert(76)
 # heap.insert(87)
 
-array = [48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41]
-value = 76
+# array = [48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41]
+# value = 76
