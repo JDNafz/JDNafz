@@ -14,6 +14,7 @@ I am offically half way to a certificate from AlgoExpert! 56/100 completed towar
 | ------------------------------------------------------------------------------------------------- | ---------- | -------------------- | 
 | [Min Heap Construction](/AlgoExpert/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                | 
 | []()                                                 | 🔵         |         | 
+| []()                                                 | 🔵         |         | 
 | [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
 | [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
 | [Max Subset Sum No Adjacent](/AlgoExpert/Medium%20Problems/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |   
