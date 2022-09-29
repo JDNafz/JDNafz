@@ -1,7 +1,8 @@
+
+
+
+
 # This is an input class. Do not edit.
-from os import link
-
-
 class Node:
     def __init__(self, value):
         self.value = value
@@ -193,4 +194,4 @@ def t2():
     linkedList.pHeadToTail()
     linkedList.insertBefore(one, two)
     linkedList.pHeadToTail()
-t1()
+# t1()
