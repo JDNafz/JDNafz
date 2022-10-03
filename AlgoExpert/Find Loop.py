@@ -1,5 +1,5 @@
 '''
-🔵 Medium
+🔴 Hard 
 https://www.algoexpert.io/questions/find-loop
 '''
 
