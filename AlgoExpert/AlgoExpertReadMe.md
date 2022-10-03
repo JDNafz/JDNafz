@@ -16,6 +16,7 @@ I am offically half way to a certificate from AlgoExpert! 60/100 completed towar
 | [Min Heap Construction](/AlgoExpert/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   | 
 | [Remove Kth From End](/AlgoExpert/Remove%20Kth%20Node%20From%20End.py)                            | 🔵         | Linked Lists            | 
 | [Sum of Linked Lists.py](/AlgoExpert/Sum%20of%20Linked%20Lists.py)                                | 🔵         | Linked Lists            | 
+| [Find Loop](/AlgoExpert/Find%20Loop.py)                                                           | 🔵         | Linked Lists            | 
 | []()                                                 | 🔵         |         | 
 | [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
 | [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
