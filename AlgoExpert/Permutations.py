@@ -18,3 +18,5 @@ def permSearch(array,perm, output):
 getPermutations([1,2,3])
 
 # remove(3, [1,2,3,4])
+
+
