@@ -1,7 +1,3 @@
-# This is an input class. Do not edit.
-from os import link
-
-
 class Node:
     def __init__(self, value):
         self.value = value
