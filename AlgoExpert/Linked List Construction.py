@@ -1,5 +1,7 @@
 '''
 
+🔵 Medium
+https://www.algoexpert.io/questions/linked-list-construction
 '''
 
 # This is an input class. Do not edit.
