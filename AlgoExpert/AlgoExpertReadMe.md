@@ -1,6 +1,6 @@
 A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
-I am offically half way to a certificate from AlgoExpert! 56/100 completed towards certificate!
+I am offically half way to a certificate from AlgoExpert! 60/100 completed towards my certificate!
 
 ## Questions
 
@@ -12,8 +12,14 @@ I am offically half way to a certificate from AlgoExpert! 56/100 completed towar
 
 | Question                                                                                          | Difficulty | Category             |           
 | ------------------------------------------------------------------------------------------------- | ---------- | -------------------- | 
-| [Min Heap Construction](/AlgoExpert/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                | 
-| []()                                                 | 🔵         |         | 
+| [Dijkstra's Algorithm](/AlgoExpert/Dijkstra's%20Algorithm.py)                                     | 🔴         | Famous Algorithms       | 
+| [Find Loop](/AlgoExpert/Find%20Loop.py)                                                           | 🔴         | Linked Lists            | 
+| [Reverse Linked List](/AlgoExpert/Reverse%20Linked%20List.py)                                     | 🔴         | Linked Lists            | 
+| [Shift Linked List](/AlgoExpert/Shift%20Linked%20List.py)                                         | 🔴         | Linked Lists            | 
+| [Min Heap Construction](/AlgoExpert/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   | 
+| [Remove Kth From End](/AlgoExpert/Remove%20Kth%20Node%20From%20End.py)                            | 🔵         | Linked Lists            | 
+| [Sum of Linked Lists.py](/AlgoExpert/Sum%20of%20Linked%20Lists.py)                                | 🔵         | Linked Lists            | 
+| []()                                | 🔵         |             | 
 | [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
 | [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
 | [Max Subset Sum No Adjacent](/AlgoExpert/Medium%20Problems/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |   
