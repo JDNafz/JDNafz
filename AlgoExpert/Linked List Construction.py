@@ -1,6 +1,8 @@
+'''
 
-
-
+🔵 Medium
+https://www.algoexpert.io/questions/linked-list-construction
+'''
 
 # This is an input class. Do not edit.
 class Node:
@@ -9,102 +11,99 @@ class Node:
         self.prev = None
         self.next = None
 
-
 # Feel free to add new properties and methods to the class.
 class DoublyLinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
 
+    
     def setHead(self, node):
-        if node == self.tail:
-            self.tail = node.prev
-            node.prev.next = None
         if self.head is None:
             self.head = node
             self.tail = node
-        else:
-            node.prev.next = node.next
-            node.next.prev = node.prev
-            self.head.prev = node
-            node.next = self.head
-            self.head = node
-        node.prev = None
-        
+            return
+        self.insertBefore(self.head, node)
 
+    
     def setTail(self, node):
-        if node == self.head:
-            self.head = node.next
-            node.next.prev = None
         if self.tail is None:
-            self.tail = node
-            self.head = node
-        else:
-            self.tail.next = node
-            node.prev = self.tail
-            self.tail = node
-        node.next = None
-            
+            self.setHead(node)
+            return
+        self.insertAfter(self.tail,node)
 
+    
     def insertBefore(self, node, nodeToInsert):
-        if node == self.head:
+        if nodeToInsert == self.head and nodeToInsert == self.tail:
+            return
+        self.remove(nodeToInsert)
+        nodeToInsert.prev = node.prev
+        nodeToInsert.next = node
+        if node.prev is None:
             self.head = nodeToInsert
         else:
-            nodeToInsert.prev = node.prev
             node.prev.next = nodeToInsert
         node.prev = nodeToInsert
-        nodeToInsert.next = node
 
-
-
+    
     def insertAfter(self, node, nodeToInsert):
-        if node == self.tail:
+        if nodeToInsert == self.head and nodeToInsert == self.tail:
+            return
+        self.remove(nodeToInsert)
+        nodeToInsert.prev = node
+        nodeToInsert.next = node.next
+        if node.next is None:
             self.tail = nodeToInsert
         else:
-            nodeToInsert.next = node.next 
             node.next.prev = nodeToInsert
         node.next = nodeToInsert
-        nodeToInsert.prev = node
 
+    
     def insertAtPosition(self, position, nodeToInsert):
-        if self.head == None:
-            self.head = nodeToInsert
-            self.tail = nodeToInsert
+        if position == 1:
+            self.setHead(nodeToInsert)
             return
         node = self.head
-        for _ in range(1,position,1):
+        currentPosition = 1
+        while node is not None and currentPosition != position:
             node = node.next
-        self.insertBefore(node, nodeToInsert)
-            
+            currentPosition += 1 
+        if node is not None:
+            self.insertBefore(node, nodeToInsert)
+        else:
+            self.setTail(nodeToInsert)
 
+    
     def removeNodesWithValue(self, value):
-        self.nodeToRemove = []
-        if self.containsNodeWithValue(value):
-            for node in self.nodeToRemove:
-                self.remove(node)
-
-        
-    def remove(self, node):
-        if node == self.head:
-            self.head = node.next
-            node.next.prev = None
-            return
-        if node == self.tail:
-            self.tail = node.prev
-            node.prev.next = None
-            return
-        if node != self.head and node != self.tail:
-            node.prev.next, node.next.prev = node.next, node.prev
-        
-    def containsNodeWithValue(self, value):
         node = self.head
         while node is not None:
-            if node.value == value:
-                self.nodeToRemove.append(node)
+            nodeToRemove = node
             node = node.next
-        if self.nodeToRemove != []:
-            return True 
-        return False
+            if nodeToRemove.value == value:
+                self.remove(nodeToRemove)
+
+    
+    def remove(self, node):
+        if node == self.head:
+            self.head = self.head.next
+        if node == self.tail:
+            self.tail = self.tail.prev
+        self.removeNodeBindings(node)
+
+    
+    def containsNodeWithValue(self, value):
+        node = self.head
+        while node is not None and node.value != value:
+            node = node.next
+        return node is not None
+
+    def removeNodeBindings(self, node):
+        if node.prev is not None:
+            node.prev.next = node.next
+        if node.next is not None:
+            node.next.prev = node.prev
+        node.prev = None
+        node.next = None
 
     def pHeadToTail(self):
         values = []
