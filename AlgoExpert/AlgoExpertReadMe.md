@@ -11,7 +11,7 @@ I am offically half way to a certificate from AlgoExpert! 66/100 completed towar
 ⚫ Very Hard
 
 | Question                                                                                          | Difficulty | Category             |           
-| ------------------------------------------------------------------------------------------------- | ---------- | -------------------- | 
+| ------------------------------------------------------------------------------------------------- | ---------- | ----------------------  | 
 | [Dijkstra's Algorithm](/AlgoExpert/Dijkstra's%20Algorithm.py)                                     | 🔴         | Famous Algorithms       | 
 | [Find Loop](/AlgoExpert/Find%20Loop.py)                                                           | 🔴         | Linked Lists            | 
 | [Reverse Linked List](/AlgoExpert/Reverse%20Linked%20List.py)                                     | 🔴         | Linked Lists            | 
