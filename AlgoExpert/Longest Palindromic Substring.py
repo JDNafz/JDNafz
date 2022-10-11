@@ -1,41 +1,33 @@
 def longestPalindromicSubstring(string):
+    if len(string) == 1: 
+        return string
+    
     longest = 0
     start = 0
-    for i in range(len(string)):
-        new = checkHere(i, string)
-        if new > longest:
-            start = i
-            longest = new
+    for l in range(len(string)):
+        right = len(string) - 1
+        match = 0
+        left = l
+        while left <= right:
+            if string[left] == string[right]:
+                #if you arrive at the same char in the middle of the string
+                if left == right:
+                    match +=1
+                #else it's not in the middle
+                else:
+                    match += 2
+                left += 1
+
+            #left & right are different
+            #if there was a match
+            elif match > 0:
+                #reset things to zero
+                match = 0
+                left = l
+                continue
+            right -= 1
+        if match > longest:
+            start = l
+            longest = match
     print(start,longest)
-    final = string[start:start+longest]
-    print(final)
-    return final
-
-    
-def checkHere(left,string):
-    right = len(string) - 1
-    end = right
-    match = 0
-    while left <= right:
-        # print(left,end)
-        if string[left] == string[right]:
-            if match == 0:
-                end = right
-            if left == right:
-                match +=1
-            else:
-                match += 2
-            right -= 1
-            left += 1
-        else:
-            match = 0
-            right -= 1
-    return match
-    
-
-
-
-
-a = "abaxyzzyxf"
-b = "ab12365456321bb"
-longestPalindromicSubstring(b)
+    return string[start:start+longest]

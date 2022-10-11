@@ -20,6 +20,7 @@ I am offically half way to a certificate from AlgoExpert! 66/100 completed towar
 | [Linked List Construction](/AlgoExpert/Linked%20List%20Construction.py)                           | 🔵         | Linked Lists            | 
 | [Remove Kth From End](/AlgoExpert/Remove%20Kth%20Node%20From%20End.py)                            | 🔵         | Linked Lists            | 
 | [Sum of Linked Lists.py](/AlgoExpert/Sum%20of%20Linked%20Lists.py)                                | 🔵         | Linked Lists            | 
+| [Longest Palindromic Substring](/AlgoExpert/Longest%20Palindromic%20Substring.py)                 | 🔵         | Strings                 | 
 | []()                                | 🔵         |             | 
 | [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
 | [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
