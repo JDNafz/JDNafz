@@ -1,3 +1,9 @@
+'''
+
+🔵 Medium
+https://www.algoexpert.io/questions/longest-palindromic-substring
+'''
+
 def longestPalindromicSubstring(string):
     if len(string) == 1: 
         return string
