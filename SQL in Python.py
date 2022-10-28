@@ -1,4 +1,3 @@
-import import ipykernel
 # In[ ]:
 import psycopg2 as pg2
 conn = pg2.connect(database='dvdrental',user='postgres',password='password')
@@ -13,4 +12,3 @@ print('dad')
 # In[]:
 print('banana')
 
-# %%
