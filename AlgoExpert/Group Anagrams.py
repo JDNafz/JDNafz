@@ -14,5 +14,5 @@ def groupAnagrams(words):
             anagrams[sortedword].append(word)
         else:
             anagrams[sortedword] = [word]
-    print(list(anagrams.values()))
+    # print(list(anagrams.values()))
     return list(anagrams.values())
