@@ -7,8 +7,6 @@ data = cur.fetchmany(2)
 cur.close()
 
 print(data)
-print('dad')
 
-# In[]:
-print('banana')
+
 
