@@ -8,7 +8,11 @@
 # print(newword)
 
 
-numberslist = ['a','b','c']
+# numberslist = ['a','b','c']
 
-print([x + 'f' for x in numberslist])
-print(numberslist)
+# print([x + 'f' for x in numberslist])
+# print(numberslist)
+
+
+for i in range(5,10):
+    print(i)

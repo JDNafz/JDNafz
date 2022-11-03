@@ -1,16 +1,28 @@
 def validIPAddresses(string):
-    output = []
     
     #find first number
-    checklist1 = []
-    startidx = 1
-    endidx = startidx + 3
-    for i in range(1,4):
-        if i > len(string):
-            continue
-        if isValidNum(string[0:i]):
-            checklist1.append(string[0:i])
+    checklist = find1stnum(string)
+    # plist(checklist)
 
+    #find 2nd 3rd and 4th
+    for i in range(3):
+        checklist = findNum(string, checklist,i)
+    # plist(checklist)
+
+    #check if length matches original string + 3 periods
+    output = []
+    for ip in checklist:
+        if len(ip) == len(string) + 3:
+            output.append(ip)
+    
+
+    # print("len(output)",len(output))
+    plist(output)
+    return output
+
+# beep = "1921680"
+
+""" 
     #find second number
     secondnum = []
     checklist2 = []
@@ -49,14 +61,40 @@ def validIPAddresses(string):
 
     print("3rd", checklist3)
 
-    return output
+    return output"""
 
-def checkNextSet(string,checklist):
-    pass
+def find1stnum(string):
+    checklist1 = []
+    startidx = 1
+    endidx = startidx + 3
+    for i in range(1,4):
+        if i > len(string):
+            continue
+        if isValidNum(string[0:i]):
+            checklist1.append(string[0:i])
+    return checklist1
 
+def findNum(string, checklist, periods):
+    newChecklist = []
+    currChecks = []
+    for i in range(len(checklist)):
+        stringSoFar = checklist[i]
+        startidx = len(stringSoFar) - periods
+        endidx = startidx + 3
+        # print("stringSoFar: {}, examine string[startidx]:{}".format(stringSoFar,string[startidx]))
 
+        for j in range(startidx,endidx):
+            if j+1 > len(string):
+                continue
+            # print("j loop,{}.".format(checklist[i]),string[startidx:j+1])
+            if isValidNum(string[startidx:j+1]):
+                currChecks.append(string[startidx:j+1])
 
-
+        # print("J Loop complete", checklist[i],currChecks)
+        for num in currChecks:
+            newChecklist.append(stringSoFar + "." + num)
+        currChecks = [] #clears currChecks before going to next checklist[i]
+    return newChecklist
 
 def isValidNum(string):
     if len(string) == 0:
@@ -69,6 +107,10 @@ def isValidNum(string):
         return True
     else:
         return False
+
+def plist(list):
+    for ip in list:
+        print(ip)
 
 beep = "1921680"
 # print(isValidNum(beep))
