@@ -1,6 +1,6 @@
 A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
-I am offically half way to a certificate from AlgoExpert! 66/100 completed towards my certificate!
+I am close to finishing my certificate from AlgoExpert, 70/100 completed!
 
 ## Questions
 
@@ -24,6 +24,7 @@ I am offically half way to a certificate from AlgoExpert! 66/100 completed towar
 | [Longest Palindromic Substring](/AlgoExpert/Longest%20Palindromic%20Substring.py)                 | 🔵         | Strings                 | 
 | [Group Anagrams](/AlgoExpert/Group%20Anagrams.py)                                                 | 🔵         | Strings                 | 
 | [Reverse Words in String](/AlgoExpert/Reverse%20Words%20in%20String.py)                           | 🔵         | Strings                 | 
+| [Valid IP Address](/AlgoExpert/Valid%20IP%20Address.py)                                           | 🔵         | Strings                 | 
 | []()                                | 🔵         |             | 
 | [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
 | [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
