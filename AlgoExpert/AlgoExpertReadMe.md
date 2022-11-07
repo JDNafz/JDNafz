@@ -12,20 +12,21 @@ I am close to finishing my certificate from AlgoExpert, 70/100 completed!
 
 | Question                                                                                          | Difficulty | Category             |           
 | ------------------------------------------------------------------------------------------------- | ---------- | ----------------------  | 
-| [Dijkstra's Algorithm](/AlgoExpert/Dijkstra's%20Algorithm.py)                                     | 🔴         | Famous Algorithms       | 
-| [Find Loop](/AlgoExpert/Find%20Loop.py)                                                           | 🔴         | Linked Lists            | 
-| [Reverse Linked List](/AlgoExpert/Reverse%20Linked%20List.py)                                     | 🔴         | Linked Lists            | 
-| [Shift Linked List](/AlgoExpert/Shift%20Linked%20List.py)                                         | 🔴         | Linked Lists            | 
-| [Min Heap Construction](/AlgoExpert/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   | 
-| [Linked List Construction](/AlgoExpert/Linked%20List%20Construction.py)                           | 🔵         | Linked Lists            | 
-| [Remove Kth From End](/AlgoExpert/Remove%20Kth%20Node%20From%20End.py)                            | 🔵         | Linked Lists            | 
-| [Sum of Linked Lists](/AlgoExpert/Sum%20of%20Linked%20Lists.py)                                   | 🔵         | Linked Lists            | 
-| [Search In Sorted Matrix](/AlgoExpert/Search%20In%20Sorted%20Matrix.py)                           | 🔵         | Searching               | 
-| [Longest Palindromic Substring](/AlgoExpert/Longest%20Palindromic%20Substring.py)                 | 🔵         | Strings                 | 
-| [Group Anagrams](/AlgoExpert/Group%20Anagrams.py)                                                 | 🔵         | Strings                 | 
-| [Reverse Words in String](/AlgoExpert/Reverse%20Words%20in%20String.py)                           | 🔵         | Strings                 | 
-| [Valid IP Address](/AlgoExpert/Valid%20IP%20Address.py)                                           | 🔵         | Strings                 | 
+| [Dijkstra's Algorithm](/AlgoExpert/Hard%20Problems/Dijkstra's%20Algorithm.py)                                       | 🔴         | Famous Algorithms       | 
+| [Find Loop](/AlgoExpert/Hard%20Problems/Find%20Loop.py)                                                             | 🔴         | Linked Lists            | 
+| [Reverse Linked List](/AlgoExpert/Hard%20Problems/Reverse%20Linked%20List.py)                                       | 🔴         | Linked Lists            | 
+| [Shift Linked List](/AlgoExpert/Hard%20Problems/Shift%20Linked%20List.py)                                           | 🔴         | Linked Lists            | 
 | []()                                | 🔵         |             | 
+| [Min Heap Construction](/AlgoExpert/Medium%20Problems/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   | 
+| [Linked List Construction](/AlgoExpert/Medium%20Problems/Linked%20List%20Construction.py)                           | 🔵         | Linked Lists            | 
+| [Remove Kth From End](/AlgoExpert/Medium%20Problems/Remove%20Kth%20Node%20From%20End.py)                            | 🔵         | Linked Lists            | 
+| [Sum of Linked Lists](/AlgoExpert/Medium%20Problems/Sum%20of%20Linked%20Lists.py)                                   | 🔵         | Linked Lists            | 
+| [Search In Sorted Matrix](/AlgoExpert/Medium%20Problems/Search%20In%20Sorted%20Matrix.py)                           | 🔵         | Searching               | 
+| [Longest Palindromic Substring](/AlgoExpert/Medium%20Problems/Longest%20Palindromic%20Substring.py)                 | 🔵         | Strings                 | 
+| [Group Anagrams](/AlgoExpert/Medium%20Problems/Group%20Anagrams.py)                                                 | 🔵         | Strings                 | 
+| [Reverse Words in String](/AlgoExpert/Medium%20Problems/Reverse%20Words%20in%20String.py)                           | 🔵         | Strings                 | 
+| [Valid IP Address](/AlgoExpert/Medium%20Problems/Valid%20IP%20Address.py)                                           | 🔵         | Strings                 | 
+| [Minimum Characters For Words](/AlgoExpert/Medium%20Problems/Minimum%20Characters%20For%20Words.py)                 | 🔵         | Strings                 | 
 | [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
 | [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
 | [Max Subset Sum No Adjacent](/AlgoExpert/Medium%20Problems/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |   
