@@ -27,9 +27,9 @@ I am close to finishing my certificate from AlgoExpert, 70/100 completed!
 | [Reverse Words in String](/AlgoExpert/Medium%20Problems/Reverse%20Words%20in%20String.py)                           | 🔵         | Strings                 | 
 | [Valid IP Address](/AlgoExpert/Medium%20Problems/Valid%20IP%20Address.py)                                           | 🔵         | Strings                 | 
 | [Minimum Characters For Words](/AlgoExpert/Medium%20Problems/Minimum%20Characters%20For%20Words.py)                 | 🔵         | Strings                 | 
-| [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
-| [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
 | [Max Subset Sum No Adjacent](/AlgoExpert/Medium%20Problems/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |   
+| [Min Number of Coins for Change](/AlgoExpert/Medium%20Problems/Min%20Number%20of%20Coins%20for%20Change.py)         | 🔵         | Dynamic Programming  | 
+| [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |   
 | [Three Number Sum](/AlgoExpert/Medium%20Problems/Three%20Number%20Sum.py)                                           | 🔵         | Arrays               | 
 | [Move Element to End](/AlgoExpert/Medium%20Problems/Move%20Element%20To%20End.py)                                   | 🔵         | Arrays               | 
 | [Monotonic Array](/AlgoExpert/Medium%20Problems/Monotonic%20Array.py)                                               | 🔵         | Arrays               | 
@@ -37,8 +37,9 @@ I am close to finishing my certificate from AlgoExpert, 70/100 completed!
 | [Longest Peak](/AlgoExpert/Medium%20Problems/Longest%20Peak.py)                                                     | 🔵         | Arrays               | 
 | [Array of Products](/AlgoExpert/Medium%20Problems/Array%20Of%20Products.py )                                        | 🔵         | Arrays               | 
 | [First Duplicate Value](/AlgoExpert/Medium%20Problems/First%20Duplicate%20Value.py)                                 | 🔵         | Arrays               | 
-| [Validate BST](/AlgoExpert/Medium%20Problems/Validate%20BST.py)                                                     | 🔵         | Binary Search Trees  | 
 | [Merge Overlapping Intervals](/AlgoExpert/Medium%20Problems/Merge%20Overlapping%20Intervals.py)                     | 🔵         | Arrays               | 
+| [Validate BST](/AlgoExpert/Medium%20Problems/Validate%20BST.py)                                                     | 🔵         | Binary Search Trees  | 
+| [BST Construction](/AlgoExpert/Medium%20Problems/BST%20Construction.py)                                             | 🔵         | Binary Search Trees  |   
 | [BST Traversal](/AlgoExpert/Medium%20Problems/BST%20Traversal.py)                                                   | 🔵         | Binary Search Trees  | 
 | [Min Height BST](/AlgoExpert/Medium%20Problems/Min%20Height%20BST.py)                                               | 🔵         | Binary Search Trees  | 
 | [Find Kth Largest Value in BST](/AlgoExpert/Medium%20Problems/Find%20Kth%20Largest%20Value%20in%20BST.py)           | 🔵         | Binary Search Trees  | 
@@ -48,7 +49,6 @@ I am close to finishing my certificate from AlgoExpert, 70/100 completed!
 | [Find Successor](/AlgoExpert/Medium%20Problems/Find%20Successor.py)                                                 | 🔵         | Binary Trees         | 
 | [Height Balanced Binary Tree](/AlgoExpert/Medium%20Problems/Height%20Balanced%20Binary%20Tree.py)                   | 🔵         | Binary Trees         | 
 | [Kadane's Algorithm](/AlgoExpert/Medium%20Problems/Kadane's%20Algorithm.py)                                         | 🔵         | Famous Algorithms    | 
-| [Min Number of Coins for Change](/AlgoExpert/Medium%20Problems/Min%20Number%20of%20Coins%20for%20Change.py)         | 🔵         | Dynamic Programming  | 
 | [Single Cycle Check](/AlgoExpert/Medium%20Problems/Single%20Cycle%20Check.py)                                       | 🔵         | Graphs               | 
 | [Breadth-first Search](/AlgoExpert/Medium%20Problems/Breadth-first%20Search.py)                                     | 🔵         | Graphs               | 
 | [River Sizes](/AlgoExpert/Medium%20Problems/River%20Sizes.py)                                                       | 🔵         | Graphs               | 
