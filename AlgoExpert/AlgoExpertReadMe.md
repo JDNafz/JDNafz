@@ -16,6 +16,7 @@ I am close to finishing my certificate from AlgoExpert, 70/100 completed!
 | [Find Loop](/AlgoExpert/Hard%20Problems/Find%20Loop.py)                                                             | 🔴         | Linked Lists            | 
 | [Reverse Linked List](/AlgoExpert/Hard%20Problems/Reverse%20Linked%20List.py)                                       | 🔴         | Linked Lists            | 
 | [Shift Linked List](/AlgoExpert/Hard%20Problems/Shift%20Linked%20List.py)                                           | 🔴         | Linked Lists            | 
+| [Three Number Sort](/AlgoExpert/Three%20Number%20Sort.py)                                | 🔵         |             | 
 | []()                                | 🔵         |             | 
 | [Min Heap Construction](/AlgoExpert/Medium%20Problems/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   | 
 | [Linked List Construction](/AlgoExpert/Medium%20Problems/Linked%20List%20Construction.py)                           | 🔵         | Linked Lists            | 
