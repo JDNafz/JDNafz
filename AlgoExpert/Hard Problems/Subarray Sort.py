@@ -1,5 +1,8 @@
 '''
+Sort Find the (middle) section of the array that needs to be sorted
+return [idx_start, idx_end] of section to be sorted.
 🔴 Hard
+https://www.algoexpert.io/questions/subarray-sort
 '''
 def subarraySort(array):
     smolboi = float('inf')
