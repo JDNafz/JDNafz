@@ -19,6 +19,7 @@ I am close to finishing my certificate from AlgoExpert, 74/100 completed!
 | [Four Number Sum](/AlgoExpert/Hard%20Problems/Four%20Number%20Sum.py)                                               | 🔴         | Arrays                  | 
 | [Subarray Sort](/AlgoExpert/Hard%20Problems/Subarray%20Sort.py)                                                     | 🔴         | Arrays                  | 
 | [Largest Range](/AlgoExpert/Hard%20Problems/Largest%20Range.py)                                                     | 🔴         | Arrays                  | 
+| [Min Rewards](/AlgoExpert/Hard%20Problems/Min%20Rewards.py)                                                         | 🔴         | Arrays                  | 
 | [Three Number Sort](/AlgoExpert/Three%20Number%20Sort.py)                                                | 🔵         |             | 
 | [Suffix Trie Construction](/AlgoExpert/Suffix%20Trie%20Construction.py)                                  | 🔵         |             | 
 | [Min Heap Construction](/AlgoExpert/Medium%20Problems/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   | 
