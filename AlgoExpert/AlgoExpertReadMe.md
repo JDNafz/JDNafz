@@ -1,6 +1,6 @@
 A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
-I am close to finishing my certificate from AlgoExpert, 74/100 completed!
+I am close to finishing my certificate from AlgoExpert, 78/100 completed!
 
 ## Questions
 
@@ -20,6 +20,7 @@ I am close to finishing my certificate from AlgoExpert, 74/100 completed!
 | [Subarray Sort](/AlgoExpert/Hard%20Problems/Subarray%20Sort.py)                                                     | 🔴         | Arrays                  | 
 | [Largest Range](/AlgoExpert/Hard%20Problems/Largest%20Range.py)                                                     | 🔴         | Arrays                  | 
 | [Min Rewards](/AlgoExpert/Hard%20Problems/Min%20Rewards.py)                                                         | 🔴         | Arrays                  | 
+| [Zigzag Traverse](/AlgoExpert/Hard%20Problems/Zigzag%20Traverse.py)                                                 | 🔴         | Arrays                  | 
 | [Three Number Sort](/AlgoExpert/Three%20Number%20Sort.py)                                                | 🔵         |             | 
 | [Suffix Trie Construction](/AlgoExpert/Suffix%20Trie%20Construction.py)                                  | 🔵         |             | 
 | [Min Heap Construction](/AlgoExpert/Medium%20Problems/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   | 
