@@ -22,6 +22,7 @@ I am close to finishing my certificate from AlgoExpert, 79/100 completed!
 | [Min Rewards](/AlgoExpert/Hard%20Problems/Min%20Rewards.py)                                                         | 🔴         | Arrays                  | 
 | [Zigzag Traverse](/AlgoExpert/Hard%20Problems/Zigzag%20Traverse.py)                                                 | 🔴         | Arrays                  | 
 | [Apartment Hunting](/AlgoExpert/Apartment%20Hunting.py)                                                             | ⚫         | Arrays                  | 
+| [Permutations](/AlgoExpert/Permutations.py)                                                              | 🔵         |             | 
 | [Three Number Sort](/AlgoExpert/Three%20Number%20Sort.py)                                                | 🔵         |             | 
 | [Suffix Trie Construction](/AlgoExpert/Suffix%20Trie%20Construction.py)                                  | 🔵         |             | 
 | [Min Heap Construction](/AlgoExpert/Medium%20Problems/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   | 
