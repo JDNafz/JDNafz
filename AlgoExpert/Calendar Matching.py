@@ -1,6 +1,8 @@
 '''
 Take in two calendars of meetings, find free time inbetween to schedule a meeting together
 
+https://www.algoexpert.io/questions/calendar-matching
+
 ⚫ Hard Difficulty
 '''
 

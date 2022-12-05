@@ -20,9 +20,9 @@ I am close to finishing my certificate from AlgoExpert, 79/100 completed!
 | [Largest Range](/AlgoExpert/Hard%20Problems/Largest%20Range.py)                                                     | 🔴         | Arrays                  |
 | [Min Rewards](/AlgoExpert/Hard%20Problems/Min%20Rewards.py)                                                         | 🔴         | Arrays                  |
 | [Zigzag Traverse](/AlgoExpert/Hard%20Problems/Zigzag%20Traverse.py)                                                 | 🔴         | Arrays                  |
-| [Apartment Hunting](/AlgoExpert/Apartment%20Hunting.py)                                                             | ⚫         | Arrays                  |
-| [Calendar Matching](/AlgoExpert/Calendar%20Matching.py)                                                             | ⚫         | Arrays                  |
-| [Permutations](/AlgoExpert/Permutations.py)                                                              | 🔵         |             |
+| [Apartment Hunting](/AlgoExpert/Apartment%20Hunting.py)                                                  | ⚫         | Arrays                  |
+| [Calendar Matching](/AlgoExpert/Calendar%20Matching.py)                                                  | ⚫         | Arrays                  |
+| [Permutations](/AlgoExpert/Permutations.py)                                                              | 🔵         | Recursion               |
 | [Three Number Sort](/AlgoExpert/Three%20Number%20Sort.py)                                                | 🔵         |             |
 | [Suffix Trie Construction](/AlgoExpert/Suffix%20Trie%20Construction.py)                                  | 🔵         |             |
 | [Min Heap Construction](/AlgoExpert/Medium%20Problems/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   |
