@@ -23,6 +23,7 @@ I am close to finishing my certificate from AlgoExpert, 79/100 completed!
 | [Apartment Hunting](/AlgoExpert/Apartment%20Hunting.py)                                                  | ⚫         | Arrays                  |
 | [Calendar Matching](/AlgoExpert/Calendar%20Matching.py)                                                  | ⚫         | Arrays                  |
 | [Min Max Stack Construction](/AlgoExpert/Min%20Max%20Stack%20Construction.py)                            | 🔵         | Stacks                  |
+| [Balanced Brackets](/AlgoExpert/Balanced%20Brackets.py)                                                  | 🔵         | Stacks                  |
 | [Permutations](/AlgoExpert/Permutations.py)                                                              | 🔵         | Recursion               |
 | [Three Number Sort](/AlgoExpert/Three%20Number%20Sort.py)                                                | 🔵         |             |
 | [Suffix Trie Construction](/AlgoExpert/Suffix%20Trie%20Construction.py)                                  | 🔵         |             |
