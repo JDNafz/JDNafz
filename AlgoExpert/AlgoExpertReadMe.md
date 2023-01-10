@@ -1,6 +1,6 @@
 # A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
-I am close to finishing my certificate from AlgoExpert, 79/100 completed!
+I am close to finishing my certificate from AlgoExpert, 96/100 completed!
 
 ## Questions
 
@@ -96,4 +96,3 @@ I am close to finishing my certificate from AlgoExpert, 79/100 completed!
 | [Generate Documuent](/AlgoExpertEasy%20Problems//Generate%20Document.py)                          | 🟢         | Strings              |
 | [First Non-Repeating Character](/AlgoExpert/Easy%20Problems/First%20Non-Repeating%20Character.py) | 🟢         | Strings              |
 | [Semordnilap](/AlgoExpert/Easy%20Problems/Semordnilap.py)                                         | 🟢         | Strings              |
-
