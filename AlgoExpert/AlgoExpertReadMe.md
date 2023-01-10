@@ -41,6 +41,7 @@ I am close to finishing my certificate from AlgoExpert, 96/100 completed!
 | [Minimum Characters For Words](/AlgoExpert/Medium%20Problems/Minimum%20Characters%20For%20Words.py)                 | 🔵         | Strings                 |
 | [Max Subset Sum No Adjacent](/AlgoExpert/Medium%20Problems/Max%20Subset%20Sum%20No%20Adjacent.py)                   | 🔵         | Dynamic Programming  |
 | [Min Number of Coins for Change](/AlgoExpert/Medium%20Problems/Min%20Number%20of%20Coins%20for%20Change.py)         | 🔵         | Dynamic Programming  |
+| [Zero Sum Subarray](/AlgoExpert/Medium%20Problems/Zero%20Sum%20Subarray.py)                                         | 🔵         | Arrays               |
 | [Smallest Difference](/AlgoExpert/Medium%20Problems/Smallest%20Difference.py)                                       | 🔵         | Arrays               |
 | [Three Number Sum](/AlgoExpert/Medium%20Problems/Three%20Number%20Sum.py)                                           | 🔵         | Arrays               |
 | [Move Element to End](/AlgoExpert/Medium%20Problems/Move%20Element%20To%20End.py)                                   | 🔵         | Arrays               |
