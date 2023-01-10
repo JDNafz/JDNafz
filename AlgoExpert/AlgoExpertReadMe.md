@@ -57,6 +57,7 @@ I am close to finishing my certificate from AlgoExpert, 96/100 completed!
 | [Min Height BST](/AlgoExpert/Medium%20Problems/Min%20Height%20BST.py)                                               | 🔵         | Binary Search Trees  |
 | [Find Kth Largest Value in BST](/AlgoExpert/Medium%20Problems/Find%20Kth%20Largest%20Value%20in%20BST.py)           | 🔵         | Binary Search Trees  |
 | [Reconstruct BST](/AlgoExpert/Medium%20Problems/Reconstruct%20BST.py)                                               | 🔵         | Binary Search Trees  |
+| [Symmetrical Tree](/AlgoExpert/Medium%20Problems/Symmetrical%20Tree.py)                                             | 🔵         | Binary Trees         |
 | [Invert Binary Tree](/AlgoExpert/Medium%20Problems/Invert%20Binary%20Tree.py)                                       | 🔵         | Binary Trees         |
 | [Binary Tree Diameter](/AlgoExpert/Medium%20Problems/Binary%20Tree%20Diameter.py)                                   | 🔵         | Binary Trees         |
 | [Find Successor](/AlgoExpert/Medium%20Problems/Find%20Successor.py)                                                 | 🔵         | Binary Trees         |

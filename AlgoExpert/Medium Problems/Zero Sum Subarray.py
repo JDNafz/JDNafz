@@ -18,9 +18,5 @@ def zeroSumSubarray(nums):
     return False
 
 
-
-
-
-
 test1 = [4, 2, -1, -1, 3]
 zeroSumSubarray(test1)
