@@ -1,6 +1,6 @@
 # A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
-I am close to finishing my certificate from AlgoExpert, 96/100 completed!
+I am close to finishing my certificate from AlgoExpert, 98/100 completed!
 
 ## Questions
 
