@@ -1,6 +1,6 @@
 # A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
-I finished my certificate from AlgoExpert, 100 completed!
+I finished my certificate from AlgoExpert, 100 completed! [View the certificate here](https://certificate.algoexpert.io/AE-6df5b1a9c9)
 
 ## Questions
 
@@ -11,7 +11,8 @@ I finished my certificate from AlgoExpert, 100 completed!
 
 | Question                                                                                          | Difficulty | Category             |
 | ------------------------------------------------------------------------------------------------- | ---------- | ----------------------  |
-| [Dijkstra's Algorithm](/AlgoExpert/Hard%20Problems/Dijkstra's%20Algorithm.py)                                       | 🔴         | Famous Algorithms       |
+| [Apartment Hunting](/AlgoExpert/Very%20Hard/Apartment%20Hunting.py)                                                 | ⚫         | Arrays                  |
+| [Calendar Matching](/AlgoExpert/Very%20Hard/Calendar%20Matching.py)                                                 | ⚫         | Arrays                  |
 | [Find Loop](/AlgoExpert/Hard%20Problems/Find%20Loop.py)                                                             | 🔴         | Linked Lists            |
 | [Reverse Linked List](/AlgoExpert/Hard%20Problems/Reverse%20Linked%20List.py)                                       | 🔴         | Linked Lists            |
 | [Shift Linked List](/AlgoExpert/Hard%20Problems/Shift%20Linked%20List.py)                                           | 🔴         | Linked Lists            |
@@ -21,14 +22,11 @@ I finished my certificate from AlgoExpert, 100 completed!
 | [Min Rewards](/AlgoExpert/Hard%20Problems/Min%20Rewards.py)                                                         | 🔴         | Arrays                  |
 | [Zigzag Traverse](/AlgoExpert/Hard%20Problems/Zigzag%20Traverse.py)                                                 | 🔴         | Arrays                  |
 | [Lowest Common Manager](/AlgoExpert/Hard%20Problems/Lowest%20Common%20Manager.py)                                   | 🔴         | Recursion               |
-| [Apartment Hunting](/AlgoExpert/Very%20Hard/Apartment%20Hunting.py)                                                 | ⚫         | Arrays                  |
-| [Calendar Matching](/AlgoExpert/Very%20Hard/Calendar%20Matching.py)                                                 | ⚫         | Arrays                  |
+| [Dijkstra's Algorithm](/AlgoExpert/Hard%20Problems/Dijkstra's%20Algorithm.py)                                       | 🔴         | Famous Algorithms       |
 | [Min Max Stack Construction](/AlgoExpert/Min%20Max%20Stack%20Construction.py)                                       | 🔵         | Stacks                  |
 | [Balanced Brackets](/AlgoExpert/Medium%20Problems/Balanced%20Brackets.py)                                           | 🔵         | Stacks                  |
 | [Sunset Views](/AlgoExpert/Medium%20Problems/Sunset%20Views.py)                                                     | 🔵         | Stacks                  |
 | [Permutations](/AlgoExpert/Medium%20Problems/Permutations.py)                                                       | 🔵         | Recursion               |
-| [Three Number Sort](/AlgoExpert/Medium%20Problems/Three%20Number%20Sort.py)                                         | 🔵         |                         |
-| [Suffix Trie Construction](/AlgoExpert/Medium%20Problems/Suffix%20Trie%20Construction.py)                           | 🔵         |                         |
 | [Min Heap Construction](/AlgoExpert/Medium%20Problems/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   |
 | [Linked List Construction](/AlgoExpert/Medium%20Problems/Linked%20List%20Construction.py)                           | 🔵         | Linked Lists            |
 | [Remove Kth From End](/AlgoExpert/Medium%20Problems/Remove%20Kth%20Node%20From%20End.py)                            | 🔵         | Linked Lists            |
@@ -74,6 +72,8 @@ I finished my certificate from AlgoExpert, 100 completed!
 | [Minimum Passes Of Matrix](/AlgoExpert/Medium%20Problems/Minimum%20Passes%20Of%20Matrix.py)                         | 🔵         | Graphs                  |
 | [Task Assignment](/AlgoExpert/Medium%20Problems/Task%20Assignment.py)                                               | 🔵         | Greedy Algorithms       |
 | [Valid Starting City](/AlgoExpert/Medium%20Problems/Valid%20Starting%20City.py)                                     | 🔵         | Greedy Algorithms       |
+| [Three Number Sort](/AlgoExpert/Medium%20Problems/Three%20Number%20Sort.py)                                         | 🔵         |                         |
+| [Suffix Trie Construction](/AlgoExpert/Medium%20Problems/Suffix%20Trie%20Construction.py)                           | 🔵         |                         |
 | [Two Number Sum](/AlgoExpert/Easy%20Problems/Two%20Number%20Sum.py)                                                 | 🟢         | Arrays                  |
 | [Validate Subsequence](/AlgoExpert/Easy%20Problems/Validate%20Subsequence.py)                                       | 🟢         | Arrays                  |
 | [Sorted Squared Array](/AlgoExpert/Easy%20Problems/Sorted%20Squared%20Array.py)                                     | 🟢         | Arrays                  |
