@@ -21,14 +21,14 @@ I am close to finishing my certificate from AlgoExpert, 99/100 completed!
 | [Min Rewards](/AlgoExpert/Hard%20Problems/Min%20Rewards.py)                                                         | 🔴         | Arrays                  |
 | [Zigzag Traverse](/AlgoExpert/Hard%20Problems/Zigzag%20Traverse.py)                                                 | 🔴         | Arrays                  |
 | [Lowest Common Manager](/AlgoExpert/Hard%20Problems/Lowest%20Common%20Manager.py)                                   | 🔴         | Recursion               |
-| [Apartment Hunting](/AlgoExpert/Apartment%20Hunting.py)                                                  | ⚫         | Arrays                  |
-| [Calendar Matching](/AlgoExpert/Calendar%20Matching.py)                                                  | ⚫         | Arrays                  |
-| [Min Max Stack Construction](/AlgoExpert/Min%20Max%20Stack%20Construction.py)                            | 🔵         | Stacks                  |
-| [Balanced Brackets](/AlgoExpert/Balanced%20Brackets.py)                                                  | 🔵         | Stacks                  |
-| [Sunset Views](/AlgoExpert/Sunset%20Views.py)                                                            | 🔵         | Stacks                  |
-| [Permutations](/AlgoExpert/Permutations.py)                                                              | 🔵         | Recursion               |
-| [Three Number Sort](/AlgoExpert/Three%20Number%20Sort.py)                                                | 🔵         |             |
-| [Suffix Trie Construction](/AlgoExpert/Suffix%20Trie%20Construction.py)                                  | 🔵         |             |
+| [Apartment Hunting](/AlgoExpert/Very%20Hard/Apartment%20Hunting.py)                                                  | ⚫         | Arrays                  |
+| [Calendar Matching](/AlgoExpert/Very%20Hard/Calendar%20Matching.py)                                                  | ⚫         | Arrays                  |
+| [Min Max Stack Construction](/AlgoExpert/Min%20Max%20Stack%20Construction.py)                                              | 🔵         | Stacks                  |
+| [Balanced Brackets](/AlgoExpert/Medium%20Problems/Balanced%20Brackets.py)                                                  | 🔵         | Stacks                  |
+| [Sunset Views](/AlgoExpert/Medium%20Problems/Sunset%20Views.py)                                                            | 🔵         | Stacks                  |
+| [Permutations](/AlgoExpert/Medium%20Problems/Permutations.py)                                                              | 🔵         | Recursion               |
+| [Three Number Sort](/AlgoExpert/Medium%20Problems/Three%20Number%20Sort.py)                                                | 🔵         |             |
+| [Suffix Trie Construction](/AlgoExpert/Medium%20Problems/Suffix%20Trie%20Construction.py)                                  | 🔵         |             |
 | [Min Heap Construction](/AlgoExpert/Medium%20Problems/Min%20Heap%20Construction.py)                                 | 🔵         | Heaps                   |
 | [Linked List Construction](/AlgoExpert/Medium%20Problems/Linked%20List%20Construction.py)                           | 🔵         | Linked Lists            |
 | [Remove Kth From End](/AlgoExpert/Medium%20Problems/Remove%20Kth%20Node%20From%20End.py)                            | 🔵         | Linked Lists            |
