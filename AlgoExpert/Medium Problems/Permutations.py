@@ -1,22 +1,28 @@
-def getPermutations(array):
-    return permSearch(array,0,[])
-    return array
+# 🔵 Medium
+#really need to review this solution again, but it's working.
 
-def permSearch(array,perm, output):
-    if not array:
-        output.append(perm)
-        return
-    for _ in range(len(array)):
-        newArray = array
-        perm = newArray.pop()
-        permSearch(newArray, perm, output)
-    print(array)
-    return array
+def getPermutations(array):
+    perms = []
+    helper(0,array,perms)
+    print(perms)
+    return perms
+
+
+def helper(i, array, perms):
+    if i == len(array) - 1:
+        perms.append(array[:])
+    else:
+        for j in range (i, len(array)):
+            swap(array,i,j)
+            helper(i + 1, array, perms)
+            swap(array, i, j)
+
+
+    return perms
+
+def swap(array,i,j):
+    array[i], array[j] = array[j], array[i]
 
 
 
 getPermutations([1,2,3])
-
-# remove(3, [1,2,3,4])
-
-
