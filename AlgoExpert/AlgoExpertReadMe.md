@@ -1,6 +1,6 @@
 # A few of my solutions to coding interview questions on [AlgoExpert.io](https://www.algoexpert.io)
 
-I am close to finishing my certificate from AlgoExpert, 98/100 completed!
+I am close to finishing my certificate from AlgoExpert, 99/100 completed!
 
 ## Questions
 
@@ -63,6 +63,7 @@ I am close to finishing my certificate from AlgoExpert, 98/100 completed!
 | [Find Successor](/AlgoExpert/Medium%20Problems/Find%20Successor.py)                                                 | 🔵         | Binary Trees         |
 | [Height Balanced Binary Tree](/AlgoExpert/Medium%20Problems/Height%20Balanced%20Binary%20Tree.py)                   | 🔵         | Binary Trees         |
 | [Kadane's Algorithm](/AlgoExpert/Medium%20Problems/Kadane's%20Algorithm.py)                                         | 🔵         | Famous Algorithms    |
+| [Stable Internships](/AlgoExpert/Medium%20Problems/Stable%20Internships.py)                                         | 🔵         | Famous Algorithms    |
 | [Single Cycle Check](/AlgoExpert/Medium%20Problems/Single%20Cycle%20Check.py)                                       | 🔵         | Graphs               |
 | [Breadth-first Search](/AlgoExpert/Medium%20Problems/Breadth-first%20Search.py)                                     | 🔵         | Graphs               |
 | [River Sizes](/AlgoExpert/Medium%20Problems/River%20Sizes.py)                                                       | 🔵         | Graphs               |
