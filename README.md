@@ -6,9 +6,7 @@
 I've dedicated my time to coding everyday and I'm looking for my first job! 
 
 I'm a dancer, human, and aspiring software engineer. I've been working this past year 
-on developing my skills. I currently focus on problem solving in python. I've been working 
-towards a certification from [AlgoExpert](/AlgoExpert/AlgoExpertReadMe.md) and like to 
-take breaks and try coding challenges on I like to work through problems on [Open.Kattis](/Open%20Kattis/)
+on developing my skills. I recently(1/23/2023) finished a [certification](https://certificate.algoexpert.io/AE-6df5b1a9c9) from AlgoExpert[(checkout their website)!](/AlgoExpert/AlgoExpertReadMe.md)
 
 
 ## Check out my Code                👇
