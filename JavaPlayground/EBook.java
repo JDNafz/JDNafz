@@ -7,7 +7,7 @@ public class EBook extends Book {
     this.format = format;
   }
 
-  String getFormat() {
+  public String getFormat() {
     return this.format;
   }
 }

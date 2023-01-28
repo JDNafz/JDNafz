@@ -6,7 +6,7 @@ public class AudioBook extends Book {
     this.runTime = runTime;
   }
 
-  int getRunTime() {
+  public int getRunTime() {
     return this.runTime;
   }
 }
