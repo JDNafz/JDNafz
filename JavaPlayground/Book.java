@@ -7,11 +7,11 @@ public class Book {
 //   public static ArrayList<Book> books = new ArrayList<Book>();
   
 
-  Book(String title, String author, int pageCount){
+  Book(String title, String author, int pageCount, Library library){
     this.title = title;
     this.author = author;
     this.pageCount = pageCount;
-    books.add(this);
+    library.addToLibrary(this);
   }
     
   public void getInfo(){
