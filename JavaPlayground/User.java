@@ -26,17 +26,22 @@ public class User {
     public void borrow(Book book, Library library) {
         if (library.checkOut(book)) {
             this.books.add(book);
+            book.checkedOutBy(this.name);
         } 
         else {
-            System.out.println("NOPE GET FUCKED GET YOUR OWN BOK!");
-        }    
-
+            System.out.printf("Sorry, %s doesn't have %s\n", library.getName(), book);
+        }
     }
 
     // uses default library if no library is provided
     public void borrow(Book book) {
         borrow(book, library);    
         }
+
+    public void returnBookTo(Book book, Library library) {
+        this.books.remove(book);
+        book.returnedTo(library);
+    }
 
     public String getBooks() {
         return books.toString();
