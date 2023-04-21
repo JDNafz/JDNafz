@@ -1,10 +1,11 @@
-West Coast Swing Data 
+# West Coast Swing Data
+
     An analysis of WSDC points
 
 **Question**:
-- Does geography play a significant factor in making it to Advanced/All-Star?
+Does geography play a significant factor in making it to Advanced/All-Star?
 Regionally? Specific states? Hard stuck novice states?
-    
+
 *Location Data Needed!*
 
 |Groups | States |
@@ -38,5 +39,3 @@ Mountain States | Colorado, Montana, Idaho, Wyoming, Utah, New Mexico
 **Question**:
 
 **Question**:
-
-
