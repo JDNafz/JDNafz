@@ -18,7 +18,10 @@ today = date.today() # the collection date will be appended to the excel file so
 # Pick the start and end numbers. Note that it's best to do 5-10k numbers at a time (takes ~1-2hr to run)
 #    instead of doing the whole thing at once (which takes 4-6 hours)
 start = 13758
-end = 13759
+end = 13760
+
+# start = 420 #test case for a dance ID that doesn't exist 
+# end = 421
 # up to 21606 as of 2023-04-01
 
 # print(point_df) # print the initialized empty dataframe
@@ -31,9 +34,10 @@ for wsdc_id in range(start, end):
     try:
         response = requests.post(API_url, {'q': wsdc_id}).json()
         
-        print(response)
+        # print(response)
 
         # only cases with valid WSDC IDs containing WCS placements
+        print(response)
         if len(response) > 2 and response['placements'] != [] and 'West Coast Swing' in response['placements'].keys():
             # print('Westie confirmed.')
             westie = response['placements']['West Coast Swing']
@@ -56,20 +60,30 @@ for wsdc_id in range(start, end):
                     event_name = eventList[i]['event']['name']
                     event_date = eventList[i]['event']['date']
                     event_location = eventList[i]['event']['location']
-                    points = eventList[i]['points']
+                    if eventList[i]['role'] == 'leader':
+                        leader_points = eventList[i]['points']
+                    else:
+                        follower_points = eventList[i]['points']
                     result = eventList[i]['result']
                     role = eventList[i]['role']
                     #print(role)
 
-                    obs = {'wsdc_id': wsdc_id, 'level_points': str(event_level)+'_'+str(tot_points), \
-                           'allowed_level': allowed_level, 'required_level': required_level, \
-                           'event_level': event_level, 'event_name': event_name, \
-                           'event_location': event_location, 'event_date': event_date, \
-                           'points': points, 'result': result, 'role': role, \
-                           'first_name': first_name, 'last_name': last_name}
+                    obs = { 'wsdc_id': wsdc_id, \
+                            'level_points': str(event_level)+'_'+str(tot_points), \
+                            'allowed_level': allowed_level, \
+                            'required_level': required_level, \
+                            'event_level': event_level, \
+                            'event_name': event_name, \
+                            'event_location': event_location, \
+                            'event_date': event_date, \
+                            'leader_points': leader_points,\
+                            'follower_points': follower_points,\
+                            'result': result, 'role': role, \
+                            'first_name': first_name, 'last_name': last_name}
                     
                     point_df_new_row = pd.DataFrame(obs, index = [0])
                     point_df = pd.concat([point_df, point_df_new_row], ignore_index = True)   
+
 
             if wsdc_id % 2000 == 0:
                 point_df.to_csv('C:\\Users\\nafzi\\Desktop\\WSDCdata\\Point_DF_'+str(today)+'updating.csv')
