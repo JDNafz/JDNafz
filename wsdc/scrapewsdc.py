@@ -1,66 +1,97 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
+import pandas as pd
+import openpyxl, requests, pprint, time
+from datetime import date
+import simplejson as json
 
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
-# import time
-# import bs4 as bs
-# import pandas as pd
 
-def SearchDancers(dancernum=13758):
-    url = 'https://points.worldsdc.com/lookup2020'
-    # url2 = 'https://www.worldsdc.com/registry-points/'
-    dancers = []
-    searchlist = []
-    for n in range(3):
-        searchlist.append(n + dancernum)
-    print(searchlist)
+
+
+API_url = 'https://points.worldsdc.com/lookup/find'
+
+point_df = pd.DataFrame(columns = ['wsdc_id', 'level_points', 'allowed_level', 'required_level', \
+                                   'event_level', 'event_name', 'event_location', 'event_date', \
+                                   'points', 'result', 'role', 'first_name', 'last_name'])
+today = date.today() # the collection date will be appended to the excel file so I know when I ran it
+
+
+
+# Pick the start and end numbers. Note that it's best to do 5-10k numbers at a time (takes ~1-2hr to run)
+#    instead of doing the whole thing at once (which takes 4-6 hours)
+start = 13758
+end = 13759
+# up to 21606 as of 2023-04-01
+
+# print(point_df) # print the initialized empty dataframe
+
+
+
+
+# Loop to go through every WSDC number
+for wsdc_id in range(start, end):
+    try:
+        response = requests.post(API_url, {'q': wsdc_id}).json()
         
+        print(response)
 
-    s = Service('/wsdc/chromedriver.exe')
-    driver = webdriver.Chrome(service=s)
+        # only cases with valid WSDC IDs containing WCS placements
+        if len(response) > 2 and response['placements'] != [] and 'West Coast Swing' in response['placements'].keys():
+            # print('Westie confirmed.')
+            westie = response['placements']['West Coast Swing']
+            
+            #Extract dancer's level information and name
+            allowed_level = response['level']['allowed']
+            required_level = response['level']['required']
+            first_name = response['dancer']['first_name']
+            last_name = response['dancer']['last_name']
+            
+            #Extract information on a per level and per event basis
+            for event_level in westie:
+                # print(event_level + " of " + str(len(westie)))
+                tot_points = westie[event_level]['total_points']
+                # print(tot_points, event_level)
+                eventList = westie[event_level]['competitions']
 
-    # Wait for the search box to be clickable
-    for danceID in searchlist:    
-        
-        driver.get(url)
-        element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="q"]')))
-        element.clear()
-        element.send_keys(danceID)
-        element.send_keys(Keys.ENTER)
+                for i in range(len(eventList)):
+                    #print(str(i) + " of " + str(len(eventList)))
+                    event_name = eventList[i]['event']['name']
+                    event_date = eventList[i]['event']['date']
+                    event_location = eventList[i]['event']['location']
+                    points = eventList[i]['points']
+                    result = eventList[i]['result']
+                    role = eventList[i]['role']
+                    #print(role)
 
-        h1name = driver.find_elements(By.XPATH, '//*[@id="lookup_results"]/h1')
-        if h1name == "Found 0 matching names:":
-            continue
-        # if WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="lookup_results"]/h1'))).text == "Found 0 matching names:":
-        #     continue
+                    obs = {'wsdc_id': wsdc_id, 'level_points': str(event_level)+'_'+str(tot_points), \
+                           'allowed_level': allowed_level, 'required_level': required_level, \
+                           'event_level': event_level, 'event_name': event_name, \
+                           'event_location': event_location, 'event_date': event_date, \
+                           'points': points, 'result': result, 'role': role, \
+                           'first_name': first_name, 'last_name': last_name}
+                    
+                    point_df_new_row = pd.DataFrame(obs, index = [0])
+                    point_df = pd.concat([point_df, point_df_new_row], ignore_index = True)   
 
-        dancelvl = WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,'//*[@id="lookup_results"]/p/span'))).text
-        name = driver.find_element(By.XPATH,'//*[@id="lookup_results"]/h1').text
-        points = driver.find_element(By.XPATH,'//*[@id="lookup_results"]/h3[1]/small').text
-        dict_name = str(danceID)
-        dict_name = {
-            "name": name,
-            "dance lvl": dancelvl,
-            "points": points
-        }
-        dancers.append(dict_name)
+            if wsdc_id % 2000 == 0:
+                point_df.to_csv('C:\\Users\\nafzi\\Desktop\\WSDCdata\\Point_DF_'+str(today)+'updating.csv')
+            
+        print('Dancer #'+str(wsdc_id)+' completed.')
+        # sleep for 0.5 seconds on each for loop to let WSDC website rest
+        time.sleep(0.5)
+                    
+                    #print('Westie #'+str(wsdc_id)+' got '+str(points)+' points as a '+role+' in '+event_date \
+                    #     +'. They are level '+allowed_level+'.')
+        #else:
+               #print('No such westie with #' + str(wsdc_id) + ' exists.')
+    except ValueError as IndexError:
+        continue
+print('That\'s all the westies!')
 
-    input("Press Enter to close the browser window")  # Wait for user input
-    driver.quit()  # Close the browser window
-    printDics(dancers)
 
 
 
-SearchDancers(420)
-# SearchDancers()
 
-list1 = [{'name': 'JD Nafziger (13758)', 'dance lvl': 'ADV', 'points': '27 points'}, {'name': 'Malory Beritsky (13759)', 'dance lvl': 'NEW', 'points': '6 points'}, {'name': 'Dan Kozar (13760)', 'dance lvl': 'NEW', 'points': '4 points'}]
-def printDics(dics):
-    for item in dics:
-        print(item)
 
-# printDics(list1)
+# Export dataframe to a csv file with the path shown
+# point_df.to_csv('C:\\Users\\nafzi\\Desktop\\WSDCdata\\Point_DF_'+str(start)+'-'+str(end)+'_'+str(today)+'.csv')
+
 

@@ -1,26 +1,28 @@
-import numpy as np
+# import numpy as np
 import pandas as pd
 
 
-point_df = pd.DataFrame(columns = ['wsdc_id', 'level_points', 'allowed_level', 'required_level', \
-                                   'event_level', 'event_name', 'event_location', 'event_date', \
-                                   'points', 'result', 'role', 'first_name', 'last_name'])
+# point_df = pd.DataFrame(columns = ['wsdc_id', 'level_points', 'allowed_level', 'required_level', \
+#                                    'event_level', 'event_name', 'event_location', 'event_date', \
+#                                    'points', 'result', 'role', 'first_name', 'last_name'])
 
-df = pd.read_csv('DF1.csv')
+file_path = 'DF1.csv'
+
+df = pd.read_csv(file_path)
 
 # print(df.to_string())
 
 # df.head()
 # df.tail()
 
-id = df['wsdc_id']
-role = df['role']
-lvl = df['event_level']
-points = df['points']
+id = df['wsdc_id'].to_string
+role = df['role'].to_string()
+lvl = df['event_level'].to_string()
+points = df['points'].to_string()
+name = df['first_name'].to_string()
+# print("BREAK")
 
-
-
-print(df['first_name'],df['role'])
-
-
-print("Leader Int points:", Lint,"\n","Follower Int Points:", Fint)
+dancers = {}
+if id not in dancers:
+    dancers.update({id: name})
+    print('new dancer', dancers[id])
