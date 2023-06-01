@@ -31,13 +31,13 @@ def dijkstrasAlgorithm(start, edges):
   return output
 
 def selectCurrent(unvisited,nodeDistance):
-  considerVerticies = []
+  considerVertices = []
   for vertex in unvisited:
-    considerVerticies.append(nodeDistance[vertex])
-  if not considerVerticies:
+    considerVertices.append(nodeDistance[vertex])
+  if not considerVertices:
     return -1 
-  minDistance = min(considerVerticies)
-  considerVertIdx = considerVerticies.index(minDistance)
+  minDistance = min(considerVertices)
+  considerVertIdx = considerVertices.index(minDistance)
   current = unvisited[considerVertIdx]
   return current
 

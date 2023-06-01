@@ -18,13 +18,6 @@ def findLoop(head):
         node = node.next
     return node
 
-
-
-
-
-def banana():
-    pass
-
 '''# This is an input class. Do not edit.
 class LinkedList:
     def __init__(self, value):
