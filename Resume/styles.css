@@ -31,7 +31,6 @@ h3 {
     align-items: left;
 }
 
-
 ul.contact {
     text-align: center;
     border-bottom:solid;
@@ -40,11 +39,8 @@ ul.contact {
     font-size:smaller;
     font-style: bold;
 }
-ul.bulleted {
-    list-style-type: square
-}
 
- li {
+.contact li {
     display: inline-block;
     padding: .8em;
 } 
