@@ -40,6 +40,9 @@ ul.contact {
     font-size:smaller;
     font-style: bold;
 }
+ul.bulleted {
+    list-style-type: square
+}
 
  li {
     display: inline-block;
