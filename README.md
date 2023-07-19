@@ -9,4 +9,5 @@ on developing my skills. I finished a certification from AlgoExpert[(checkout th
 
 ## [Prime Digital Academy](https://www.primeacademy.io/)
 
-## Most Recent [Hello World Website](/Prime/assignment-unit-1/assignment/index.html)
+## Most Recent [Hello World Website](assignment/index.html)
+[link](/assignment-unit-1/assignment/index.html)
