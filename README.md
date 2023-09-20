@@ -1,8 +1,5 @@
-# JD Nafziger
 
-I'm a dancer, human, and aspiring software engineer. I've been working this past year 
-on developing my skills. I finished a certification from AlgoExpert[(checkout their website)!](/AlgoExpert/AlgoExpertReadMe.md) in January of this year and started a bootcamp through Prime Digital Academy in July. Here are some of my projects.
+I'm a dancer, human, and aspiring software engineer.
 
-## [View my Algo Expert Repository](https://github.com/JDNafz/AlgoExpert/blob/main/README.md) <---- Over 100 problems completed!
+#### View my [Algo Expert](https://github.com/JDNafz/AlgoExpert/blob/main/README.md) Repository or the pinned repositories below 
 
-## Most Recent Project [Hello World Website](https://jdnafz.github.io/assignment-unit-1/assignment/index.html)
