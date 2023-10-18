@@ -1,5 +1,5 @@
 
-I'm a dancer, human, and aspiring software engineer.
+I'm a dancer, human, and software engineer.
 
 #### Check out some of my repositories :) 
 
