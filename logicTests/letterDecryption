@@ -1,13 +1,16 @@
 const readline = require("readline");
 
-function convertToSum(inputString, setTotal, difference) {
+function convertToSum(inputString, setTotal, operation) {
   // Convert the input string to a sum of corresponding numbers using ASCII values
   const totalSum = inputString.split("").reduce((sum, char) => {
     const charValue = char.toLowerCase().charCodeAt(0) - "a".charCodeAt(0) + 1;
     return sum + (charValue >= 1 && charValue <= 26 ? charValue : 0);
   }, 0);
-  if (setTotal === "x") {
-    return totalSum + difference;
+  if (setTotal === null) {
+    const result = JSON.parse(`${totalSum}`+ operation);
+    console.log("RESULT after JSON.parse:", result)
+    return
+    // return totalSum + difference;
   } else difference = setTotal - totalSum;
   return difference;
 }
@@ -36,19 +39,18 @@ const rl = readline.createInterface({
 rl.question("Please enter the inputString: ", (inputStr) => {
   rl.question(`Please enter the answer or 'Enter' if unknown:`, (answer) => {
     if (answer === "") {
-      rl.question(`Please input the operation (i.e. +3 or *4)`)
+      rl.question(`Please input the operation (i.e. +3 or *4)`, (operation) => {
+        console.log(`Given ${inputStr, operation}, the answer is`, convertToSum(inputStr,null,operation));
+      });
       console.log(
         `Given ${inputStr} + ${difference}, the answer is:`,
         convertToSum(inputStr, setTotal, 3)
       );
     }
-    rl.close();
-  });
-});
-rl.question("Please enter the first value: ", (firstInput) => {
-  rl.question("Please enter the second value: ", (secondInput) => {
-    console.log(`You entered the first value: ${firstInput}`);
-    console.log(`You entered the second value: ${secondInput}`);
+
+
+
+
     rl.close();
   });
 });
