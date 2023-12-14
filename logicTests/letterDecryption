@@ -1,3 +1,11 @@
+//to run this file simply run:
+
+//   node letterDecryption
+
+// in the terminal, it will prompt you for the values needed
+
+// Or you can manually enter values on line 50
+
 const readline = require("readline");
 
 function convertToSum(inputString, setTotal, operation) {
@@ -7,29 +15,38 @@ function convertToSum(inputString, setTotal, operation) {
     return sum + (charValue >= 1 && charValue <= 26 ? charValue : 0);
   }, 0);
   if (setTotal === null) {
-    const result = JSON.parse(`${totalSum}`+ operation);
-    console.log("RESULT after JSON.parse:", result)
-    return
+    const result = eval(`${totalSum}` + operation);
+    // console.log("RESULT after eval():", result);
+    return result;
     // return totalSum + difference;
-  } else difference = setTotal - totalSum;
+  }
+  const difference = setTotal - totalSum;
   return difference;
+  return;
 }
 
-// const inputStr = "OCCAM";
-// const setTotal = "x";
-// const difference = 3;
+//enter values manually
+// ABA = 9
+// inputStrManual = 'ABA'
+// setTotalManual = 9
 
-// if (setTotal === "x") {
-//   console.log(
-//     `Given ${inputStr} + ${difference}, the answer is:`,
-//     convertToSum(inputStr, setTotal, 3)
-//   );
-// } else {
-//   console.log(
-//     `The difference from'${inputStr}' is:`,
-//     convertToSum(inputStr, setTotal)
-//   );
-// }
+// if getting the final answer setTotalManual should be 'x'
+// differenceManual = should be a string like ' * 2 '
+const inputStrManual = "";
+const setTotalManual = "x";
+const differenceManual = "";
+if (inputStrManual !== "") {
+  if (setTotalManual === "x") {
+    console.log(
+      `Given ${inputStrManual} + ${differenceManual}, the answer is:`,
+      convertToSum(inputStrManual, setTotalManual, differenceManual)
+    );
+  }
+  console.log(
+    `The difference from'${inputStrManual}' is:`,
+    convertToSum(inputStrManual, setTotalManual)
+  );
+}
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -37,20 +54,25 @@ const rl = readline.createInterface({
 });
 
 rl.question("Please enter the inputString: ", (inputStr) => {
-  rl.question(`Please enter the answer or 'Enter' if unknown:`, (answer) => {
-    if (answer === "") {
-      rl.question(`Please input the operation (i.e. +3 or *4)`, (operation) => {
-        console.log(`Given ${inputStr, operation}, the answer is`, convertToSum(inputStr,null,operation));
-      });
-      console.log(
-        `Given ${inputStr} + ${difference}, the answer is:`,
-        convertToSum(inputStr, setTotal, 3)
+  rl.question(`Please enter the answer or 'x' if unknown: `, (answer) => {
+    if (answer === "x") {
+      rl.question(
+        `Please input the operation (i.e. +3 or *4): `,
+        (operation) => {
+          console.log(
+            `Given ${(inputStr, operation)}, the answer is`,
+            convertToSum(inputStr, null, operation)
+          );
+
+          rl.close();
+        }
       );
     }
-
-
-
-
+    let result = convertToSum(inputStr,answer)
+    if (result > 0){
+      result = `+${result}`
+    }
+    console.log(`Given ${inputStr} = ${answer}, the difference is`, result)
     rl.close();
   });
 });
