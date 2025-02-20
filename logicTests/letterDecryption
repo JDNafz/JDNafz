@@ -1,51 +1,75 @@
 //to run this file simply run:
-
 //   node letterDecryption
 
 // in the terminal, it will prompt you for the values needed
 
-// Or you can manually enter values on line 50
+// Or you can manually enter values on line 54
 
 const readline = require("readline");
 
-function convertToSum(inputString, setTotal, operation) {
+function decrypt(inputString, setTotal, operation) {
+  if (!operation) {
+    operation = "+0";
+  }
+
   // Convert the input string to a sum of corresponding numbers using ASCII values
   const totalSum = inputString.split("").reduce((sum, char) => {
     const charValue = char.toLowerCase().charCodeAt(0) - "a".charCodeAt(0) + 1;
     return sum + (charValue >= 1 && charValue <= 26 ? charValue : 0);
   }, 0);
+
   if (setTotal === null) {
-    const result = eval(`${totalSum}` + operation);
-    // console.log("RESULT after eval():", result);
+    const result = performOperation(totalSum, operation);
     return result;
-    // return totalSum + difference;
   }
-  const difference = setTotal - totalSum;
+
+  const difference = Number(setTotal) - totalSum;
   return difference;
-  return;
 }
 
-//enter values manually
-// ABA = 9
-// inputStrManual = 'ABA'
-// setTotalManual = 9
+function performOperation(totalSum, operation) {
+  const operator = operation[0];
+  const value = Number(operation.slice(1));
 
-// if getting the final answer setTotalManual should be 'x'
-// differenceManual = should be a string like ' * 2 '
-const inputStrManual = "";
-const setTotalManual = "x";
-const differenceManual = "";
+  switch (operator) {
+    case '+':
+      return totalSum + value;
+    case '-':
+      return totalSum - value;
+    case '*':
+      return totalSum * value;
+    case '/':
+      return totalSum / value;
+    default:
+      throw new Error("Invalid operation");
+  }
+}
+
+//Example
+// If given the prompt 'ABA = 9' and they ask for the difference,
+// the answer would be 5 (A=1, B=2, A=1, 1+2+1=4, 9-4=5)
+//                          1  + 2  + 1 = 4
+//                          9 - 4 = 5
+
+const UserString = ""; // the 'UserString' would be 'ABA'
+const UserTotal = ""; // the 'UserTotal' would be 9
+const UserOperation = ""; // the 'UserOperation' would be empty
+
+const inputStrManual = UserString;
+const setTotalManual = UserTotal;
+const differenceManual = UserOperation;
 if (inputStrManual !== "") {
   if (setTotalManual === "x") {
     console.log(
       `Given ${inputStrManual} + ${differenceManual}, the answer is:`,
-      convertToSum(inputStrManual, setTotalManual, differenceManual)
+      decrypt(inputStrManual, null, differenceManual)
+    );
+  } else {
+    console.log(
+      `The difference from '${inputStrManual}' is:`,
+      decrypt(inputStrManual, setTotalManual, null)
     );
   }
-  console.log(
-    `The difference from'${inputStrManual}' is:`,
-    convertToSum(inputStrManual, setTotalManual)
-  );
 }
 
 const rl = readline.createInterface({
@@ -53,26 +77,30 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("Please enter the inputString: ", (inputStr) => {
-  rl.question(`Please enter the answer or 'x' if unknown: `, (answer) => {
-    if (answer === "x") {
-      rl.question(
-        `Please input the operation (i.e. +3 or *4): `,
-        (operation) => {
-          console.log(
-            `Given ${(inputStr, operation)}, the answer is`,
-            convertToSum(inputStr, null, operation)
-          );
-
-          rl.close();
+function getInputs() {
+  rl.question("Please enter the inputString: ", (inputStr) => {
+    rl.question(`Please enter the answer or 'x' if unknown: `, (answer) => {
+      if (answer === "x") {
+        rl.question(
+          `Please input the operation (i.e. +3 or *4): `,
+          (operation) => {
+            console.log(
+              `Given ${inputStr} + ${operation}, the answer is`,
+              decrypt(inputStr, null, operation)
+            );
+            rl.close();
+          }
+        );
+      } else {
+        let result = decrypt(inputStr, answer, null);
+        if (result > 0) {
+          result = `+${result}`;
         }
-      );
-    }
-    let result = convertToSum(inputStr,answer)
-    if (result > 0){
-      result = `+${result}`
-    }
-    console.log(`Given ${inputStr} = ${answer}, the difference is`, result)
-    rl.close();
+        console.log(`Given ${inputStr} = ${answer}, the difference is`, result);
+        rl.close();
+      }
+    });
   });
-});
+}
+
+getInputs();
