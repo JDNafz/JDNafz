@@ -33,11 +33,3 @@
 <img alt="Git" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
 
 <img alt="VS Code" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-
-<br>
-<br>
-<br>
-
-# 
-
-Check out my work:
