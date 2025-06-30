@@ -1,16 +1,43 @@
-## Hi there 👋
+## Hi 👋
 
-<!--
-**JDNafz/JDNafz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- 👨‍💻 I'm a full-stack developer
 
-Here are some ideas to get you started:
+- 📚 My favorite Stack is React, Express, PostgreSQL
+ 
+- 🌱 I’m currently learning Next.js
+  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### Let's connect on LinkedIn feel free to send me a message.
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/jdnafziger/) 
+
+# 
+
+<img alt="TypeScript" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+
+<img alt="JavaScript" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+
+<img alt="React" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+
+<img alt="Express.js" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+
+<img alt="Node.js" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+
+<img alt="HTML" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+
+<img alt="CSS" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+
+
+
+
+<img alt="Git" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+
+<img alt="VS Code" align="left" width="35px" style="padding-right:5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+
+<br>
+<br>
+<br>
+
+# 
+
+Check out my work:
